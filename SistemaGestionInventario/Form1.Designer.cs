@@ -1,6 +1,6 @@
 ﻿namespace SistemaGestionInventario
 {
-    partial class frmAlmacen
+    partial class frmAdministrador
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -28,11 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAlmacen));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAdministrador));
+            this.button1 = new System.Windows.Forms.Button();
+            this.btnCerrar = new System.Windows.Forms.Button();
             this.plMenuContactos = new System.Windows.Forms.Panel();
             this.plMenuLateral = new System.Windows.Forms.Panel();
-            this.btnPagos = new System.Windows.Forms.Button();
+            this.btnEstadisticas = new System.Windows.Forms.Button();
+            this.btnFacturas = new System.Windows.Forms.Button();
             this.btnReportes = new System.Windows.Forms.Button();
+            this.btnPagos = new System.Windows.Forms.Button();
             this.btnProveedores = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btnAlmacen = new System.Windows.Forms.Button();
@@ -43,7 +47,6 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblNombre = new System.Windows.Forms.Label();
             this.pbxImagenPerfil = new System.Windows.Forms.PictureBox();
-            this.btnFacturas = new System.Windows.Forms.Button();
             this.plMenuLateral.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxSeparador)).BeginInit();
@@ -51,17 +54,43 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbxImagenPerfil)).BeginInit();
             this.SuspendLayout();
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Image = global::SistemaGestionInventario.Properties.Resources.arrow_left___271_;
+            this.button1.Location = new System.Drawing.Point(208, 0);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(50, 51);
+            this.button1.TabIndex = 3;
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // btnCerrar
+            // 
+            this.btnCerrar.BackColor = System.Drawing.Color.Transparent;
+            this.btnCerrar.FlatAppearance.BorderSize = 0;
+            this.btnCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCerrar.Image = global::SistemaGestionInventario.Properties.Resources.shut_down___1431_;
+            this.btnCerrar.Location = new System.Drawing.Point(710, 0);
+            this.btnCerrar.Name = "btnCerrar";
+            this.btnCerrar.Size = new System.Drawing.Size(50, 51);
+            this.btnCerrar.TabIndex = 2;
+            this.btnCerrar.UseVisualStyleBackColor = false;
+            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
+            // 
             // plMenuContactos
             // 
             this.plMenuContactos.BackgroundImage = global::SistemaGestionInventario.Properties.Resources.color1;
-            this.plMenuContactos.Location = new System.Drawing.Point(780, 0);
+            this.plMenuContactos.Location = new System.Drawing.Point(865, 0);
             this.plMenuContactos.Name = "plMenuContactos";
-            this.plMenuContactos.Size = new System.Drawing.Size(56, 526);
+            this.plMenuContactos.Size = new System.Drawing.Size(56, 595);
             this.plMenuContactos.TabIndex = 1;
             // 
             // plMenuLateral
             // 
             this.plMenuLateral.BackgroundImage = global::SistemaGestionInventario.Properties.Resources.color1;
+            this.plMenuLateral.Controls.Add(this.btnEstadisticas);
             this.plMenuLateral.Controls.Add(this.btnFacturas);
             this.plMenuLateral.Controls.Add(this.btnReportes);
             this.plMenuLateral.Controls.Add(this.btnPagos);
@@ -80,22 +109,39 @@
             this.plMenuLateral.Size = new System.Drawing.Size(192, 595);
             this.plMenuLateral.TabIndex = 0;
             // 
-            // btnPagos
+            // btnEstadisticas
             // 
-            this.btnPagos.BackColor = System.Drawing.Color.Transparent;
-            this.btnPagos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnPagos.FlatAppearance.BorderSize = 0;
-            this.btnPagos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPagos.Font = new System.Drawing.Font("Corbel", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPagos.Image = global::SistemaGestionInventario.Properties.Resources.money___1183_;
-            this.btnPagos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPagos.Location = new System.Drawing.Point(0, 396);
-            this.btnPagos.Name = "btnPagos";
-            this.btnPagos.Size = new System.Drawing.Size(192, 32);
-            this.btnPagos.TabIndex = 10;
-            this.btnPagos.Text = "Pagos";
-            this.btnPagos.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnPagos.UseVisualStyleBackColor = false;
+            this.btnEstadisticas.BackColor = System.Drawing.Color.Transparent;
+            this.btnEstadisticas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnEstadisticas.FlatAppearance.BorderSize = 0;
+            this.btnEstadisticas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEstadisticas.Font = new System.Drawing.Font("Corbel", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEstadisticas.Image = global::SistemaGestionInventario.Properties.Resources.stats___1366_;
+            this.btnEstadisticas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEstadisticas.Location = new System.Drawing.Point(0, 457);
+            this.btnEstadisticas.Name = "btnEstadisticas";
+            this.btnEstadisticas.Size = new System.Drawing.Size(192, 29);
+            this.btnEstadisticas.TabIndex = 11;
+            this.btnEstadisticas.Text = "Estadisticas";
+            this.btnEstadisticas.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnEstadisticas.UseVisualStyleBackColor = false;
+            // 
+            // btnFacturas
+            // 
+            this.btnFacturas.BackColor = System.Drawing.Color.Transparent;
+            this.btnFacturas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnFacturas.FlatAppearance.BorderSize = 0;
+            this.btnFacturas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFacturas.Font = new System.Drawing.Font("Corbel", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFacturas.Image = global::SistemaGestionInventario.Properties.Resources.file_double___1695_;
+            this.btnFacturas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnFacturas.Location = new System.Drawing.Point(0, 428);
+            this.btnFacturas.Name = "btnFacturas";
+            this.btnFacturas.Size = new System.Drawing.Size(192, 29);
+            this.btnFacturas.TabIndex = 10;
+            this.btnFacturas.Text = "Facturas";
+            this.btnFacturas.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnFacturas.UseVisualStyleBackColor = false;
             // 
             // btnReportes
             // 
@@ -114,6 +160,23 @@
             this.btnReportes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnReportes.UseVisualStyleBackColor = false;
             // 
+            // btnPagos
+            // 
+            this.btnPagos.BackColor = System.Drawing.Color.Transparent;
+            this.btnPagos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnPagos.FlatAppearance.BorderSize = 0;
+            this.btnPagos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPagos.Font = new System.Drawing.Font("Corbel", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPagos.Image = global::SistemaGestionInventario.Properties.Resources.money___1183_;
+            this.btnPagos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPagos.Location = new System.Drawing.Point(0, 396);
+            this.btnPagos.Name = "btnPagos";
+            this.btnPagos.Size = new System.Drawing.Size(192, 32);
+            this.btnPagos.TabIndex = 10;
+            this.btnPagos.Text = "Pagos";
+            this.btnPagos.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnPagos.UseVisualStyleBackColor = false;
+            // 
             // btnProveedores
             // 
             this.btnProveedores.BackColor = System.Drawing.Color.Transparent;
@@ -121,6 +184,7 @@
             this.btnProveedores.FlatAppearance.BorderSize = 0;
             this.btnProveedores.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnProveedores.Font = new System.Drawing.Font("Corbel", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnProveedores.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.btnProveedores.Image = global::SistemaGestionInventario.Properties.Resources.car___646_;
             this.btnProveedores.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnProveedores.Location = new System.Drawing.Point(-1, 339);
@@ -149,13 +213,14 @@
             this.btnAlmacen.FlatAppearance.BorderSize = 0;
             this.btnAlmacen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAlmacen.Font = new System.Drawing.Font("Corbel", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAlmacen.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.btnAlmacen.Image = global::SistemaGestionInventario.Properties.Resources.database_system___1797_;
             this.btnAlmacen.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAlmacen.Location = new System.Drawing.Point(0, 309);
             this.btnAlmacen.Name = "btnAlmacen";
             this.btnAlmacen.Size = new System.Drawing.Size(192, 29);
             this.btnAlmacen.TabIndex = 7;
-            this.btnAlmacen.Text = "Amacén";
+            this.btnAlmacen.Text = "Almacén";
             this.btnAlmacen.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnAlmacen.UseVisualStyleBackColor = false;
             // 
@@ -250,34 +315,19 @@
             this.pbxImagenPerfil.TabIndex = 0;
             this.pbxImagenPerfil.TabStop = false;
             // 
-            // btnFacturas
-            // 
-            this.btnFacturas.BackColor = System.Drawing.Color.Transparent;
-            this.btnFacturas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnFacturas.FlatAppearance.BorderSize = 0;
-            this.btnFacturas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFacturas.Font = new System.Drawing.Font("Corbel", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFacturas.Image = global::SistemaGestionInventario.Properties.Resources.file_double___1695_;
-            this.btnFacturas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnFacturas.Location = new System.Drawing.Point(0, 428);
-            this.btnFacturas.Name = "btnFacturas";
-            this.btnFacturas.Size = new System.Drawing.Size(192, 29);
-            this.btnFacturas.TabIndex = 10;
-            this.btnFacturas.Text = "Facturas";
-            this.btnFacturas.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnFacturas.UseVisualStyleBackColor = false;
-            // 
-            // frmAlmacen
+            // frmAdministrador
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(836, 594);
+            this.ClientSize = new System.Drawing.Size(921, 594);
             this.ControlBox = false;
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnCerrar);
             this.Controls.Add(this.plMenuContactos);
             this.Controls.Add(this.plMenuLateral);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "frmAlmacen";
-            this.Text = "Form1";
+            this.Name = "frmAdministrador";
+            this.Text = "-";
             this.Load += new System.EventHandler(this.frmAlmacen_Load);
             this.plMenuLateral.ResumeLayout(false);
             this.plMenuLateral.PerformLayout();
@@ -306,6 +356,9 @@
         private System.Windows.Forms.Button btnReportes;
         private System.Windows.Forms.Button btnPagos;
         private System.Windows.Forms.Button btnFacturas;
+        private System.Windows.Forms.Button btnEstadisticas;
+        private System.Windows.Forms.Button btnCerrar;
+        private System.Windows.Forms.Button button1;
     }
 }
 

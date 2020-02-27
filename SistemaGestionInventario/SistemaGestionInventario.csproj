@@ -125,5 +125,14 @@
   <ItemGroup>
     <None Include="Resources\file_double [#1695].ico" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stats [#1366].ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shut_down [#1431].png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow_left [#271].png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

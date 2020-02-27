@@ -63,6 +63,16 @@ namespace SistemaGestionInventario.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap arrow_left___271_ {
+            get {
+                object obj = ResourceManager.GetObject("arrow_left [#271]", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap car___646_ {
             get {
                 object obj = ResourceManager.GetObject("car [#646]", resourceCulture);
@@ -206,6 +216,26 @@ namespace SistemaGestionInventario.Properties {
         internal static System.Drawing.Bitmap profile___1335_1 {
             get {
                 object obj = ResourceManager.GetObject("profile [#1335]1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap shut_down___1431_ {
+            get {
+                object obj = ResourceManager.GetObject("shut_down [#1431]", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap stats___1366_ {
+            get {
+                object obj = ResourceManager.GetObject("stats [#1366]", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

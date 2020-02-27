@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace SistemaGestionInventario
 {
-    public partial class frmAlmacen : Form
+    public partial class frmAdministrador : Form
     {
-        public frmAlmacen()
+        public frmAdministrador()
         {
             InitializeComponent();
         }
@@ -30,6 +30,15 @@ namespace SistemaGestionInventario
         private void btnCuenta_MouseLeave(object sender, EventArgs e)
         {
             btnCuenta.BackColor = Color.Transparent;
+        }
+
+        private void btnCerrar_Click(object sender, EventArgs e)
+        {
+           if(MessageBox.Show("¿Desea salir de SIGAL SW?", "Salir", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) == DialogResult.Yes)
+            {
+                this.Close();
+                Application.Exit();
+            }
         }
     }
 }
