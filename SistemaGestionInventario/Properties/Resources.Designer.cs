@@ -63,6 +63,16 @@ namespace SistemaGestionInventario.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap arrow_in_right___385_ {
+            get {
+                object obj = ResourceManager.GetObject("arrow_in_right [#385]", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap arrow_left___271_ {
             get {
                 object obj = ResourceManager.GetObject("arrow_left [#271]", resourceCulture);
@@ -163,6 +173,16 @@ namespace SistemaGestionInventario.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap delete___1487_ {
+            get {
+                object obj = ResourceManager.GetObject("delete [#1487]", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap desktop___232_ {
             get {
                 object obj = ResourceManager.GetObject("desktop [#232]", resourceCulture);
@@ -176,6 +196,16 @@ namespace SistemaGestionInventario.Properties {
         internal static System.Drawing.Bitmap file_double___1695_ {
             get {
                 object obj = ResourceManager.GetObject("file_double [#1695]", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap file_plus___1682_ {
+            get {
+                object obj = ResourceManager.GetObject("file_plus [#1682]", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -203,6 +233,16 @@ namespace SistemaGestionInventario.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap plus_circle___1425_ {
+            get {
+                object obj = ResourceManager.GetObject("plus_circle [#1425]", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap profile___1335_ {
             get {
                 object obj = ResourceManager.GetObject("profile [#1335]", resourceCulture);
@@ -223,9 +263,69 @@ namespace SistemaGestionInventario.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap save_item___1411_ {
+            get {
+                object obj = ResourceManager.GetObject("save_item [#1411]", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap search_right___1505_ {
+            get {
+                object obj = ResourceManager.GetObject("search_right [#1505]", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap shut_down___1431_ {
             get {
                 object obj = ResourceManager.GetObject("shut_down [#1431]", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap sigal_sw {
+            get {
+                object obj = ResourceManager.GetObject("sigal-sw", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap sigal_sw1 {
+            get {
+                object obj = ResourceManager.GetObject("sigal-sw1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap sigal_sw2 {
+            get {
+                object obj = ResourceManager.GetObject("sigal-sw2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap sigal_sw3 {
+            get {
+                object obj = ResourceManager.GetObject("sigal-sw3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

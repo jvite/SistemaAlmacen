@@ -8,3 +8,5 @@ C:\Users\PROPIETARIO\source\repos\SistemaGestionInventario\SistemaGestionInventa
 C:\Users\PROPIETARIO\source\repos\SistemaGestionInventario\SistemaGestionInventario\obj\Debug\SistemaGestionInventario.exe
 C:\Users\PROPIETARIO\source\repos\SistemaGestionInventario\SistemaGestionInventario\obj\Debug\SistemaGestionInventario.pdb
 C:\Users\PROPIETARIO\source\repos\SistemaGestionInventario\SistemaGestionInventario\obj\Debug\SistemaGestionInventario.frmAdministrador.resources
+C:\Users\PROPIETARIO\source\repos\SistemaGestionInventario\SistemaGestionInventario\obj\Debug\SistemaGestionInventario.frmInicioDeSesion.resources
+C:\Users\PROPIETARIO\source\repos\SistemaGestionInventario\SistemaGestionInventario\obj\Debug\SistemaGestionInventario.frmAlmacen.resources
