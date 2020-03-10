@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAdministrador));
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.plContenedor = new System.Windows.Forms.Panel();
             this.pbxSIGALSW = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnCerrarSesion = new System.Windows.Forms.Button();
             this.btnCerrar = new System.Windows.Forms.Button();
             this.plMenuContactos = new System.Windows.Forms.Panel();
             this.plMenuLateral = new System.Windows.Forms.Panel();
@@ -59,13 +59,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbxImagenPerfil)).BeginInit();
             this.SuspendLayout();
             // 
-            // panel1
+            // plContenedor
             // 
-            this.panel1.BackColor = System.Drawing.Color.Transparent;
-            this.panel1.Location = new System.Drawing.Point(198, 91);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(751, 496);
-            this.panel1.TabIndex = 4;
+            this.plContenedor.BackColor = System.Drawing.Color.Transparent;
+            this.plContenedor.Location = new System.Drawing.Point(198, 91);
+            this.plContenedor.Name = "plContenedor";
+            this.plContenedor.Size = new System.Drawing.Size(751, 541);
+            this.plContenedor.TabIndex = 4;
             // 
             // pbxSIGALSW
             // 
@@ -90,17 +90,18 @@
             this.pictureBox3.TabIndex = 12;
             this.pictureBox3.TabStop = false;
             // 
-            // button1
+            // btnCerrarSesion
             // 
-            this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Image = global::SistemaGestionInventario.Properties.Resources.arrow_left___271_;
-            this.button1.Location = new System.Drawing.Point(200, 1);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(50, 51);
-            this.button1.TabIndex = 3;
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnCerrarSesion.BackColor = System.Drawing.Color.Transparent;
+            this.btnCerrarSesion.FlatAppearance.BorderSize = 0;
+            this.btnCerrarSesion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCerrarSesion.Image = global::SistemaGestionInventario.Properties.Resources.arrow_left___271_;
+            this.btnCerrarSesion.Location = new System.Drawing.Point(200, 1);
+            this.btnCerrarSesion.Name = "btnCerrarSesion";
+            this.btnCerrarSesion.Size = new System.Drawing.Size(50, 51);
+            this.btnCerrarSesion.TabIndex = 3;
+            this.btnCerrarSesion.UseVisualStyleBackColor = false;
+            this.btnCerrarSesion.Click += new System.EventHandler(this.btnCerrarSesion_Click);
             // 
             // btnCerrar
             // 
@@ -120,7 +121,7 @@
             this.plMenuContactos.BackgroundImage = global::SistemaGestionInventario.Properties.Resources.color1;
             this.plMenuContactos.Location = new System.Drawing.Point(955, 0);
             this.plMenuContactos.Name = "plMenuContactos";
-            this.plMenuContactos.Size = new System.Drawing.Size(56, 595);
+            this.plMenuContactos.Size = new System.Drawing.Size(56, 639);
             this.plMenuContactos.TabIndex = 1;
             // 
             // plMenuLateral
@@ -142,7 +143,7 @@
             this.plMenuLateral.Controls.Add(this.pbxImagenPerfil);
             this.plMenuLateral.Location = new System.Drawing.Point(0, 0);
             this.plMenuLateral.Name = "plMenuLateral";
-            this.plMenuLateral.Size = new System.Drawing.Size(192, 595);
+            this.plMenuLateral.Size = new System.Drawing.Size(192, 639);
             this.plMenuLateral.TabIndex = 0;
             // 
             // btnEstadisticas
@@ -263,6 +264,7 @@
             this.btnAlmacen.Text = "Almacén";
             this.btnAlmacen.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnAlmacen.UseVisualStyleBackColor = false;
+            this.btnAlmacen.Click += new System.EventHandler(this.btnAlmacen_Click);
             // 
             // btnEscritorio
             // 
@@ -363,17 +365,18 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1011, 594);
+            this.ClientSize = new System.Drawing.Size(1011, 644);
             this.ControlBox = false;
             this.Controls.Add(this.pbxSIGALSW);
             this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.plContenedor);
+            this.Controls.Add(this.btnCerrarSesion);
             this.Controls.Add(this.btnCerrar);
             this.Controls.Add(this.plMenuContactos);
             this.Controls.Add(this.plMenuLateral);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmAdministrador";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "SIGAL SW - Administrador";
             this.Load += new System.EventHandler(this.frmAlmacen_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbxSIGALSW)).EndInit();
@@ -407,8 +410,8 @@
         private System.Windows.Forms.Button btnFacturas;
         private System.Windows.Forms.Button btnEstadisticas;
         private System.Windows.Forms.Button btnCerrar;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button btnCerrarSesion;
+        private System.Windows.Forms.Panel plContenedor;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pbxSIGALSW;
     }
