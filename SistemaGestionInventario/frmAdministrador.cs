@@ -80,9 +80,8 @@ namespace SistemaGestionInventario
             if (MessageBox.Show("Está a punto de cerrar sesión, ¿Continuar?", "Cerrar sesión", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) == DialogResult.Yes)
             {
                 this.Dispose();
-                Application.Exit();
                 frmInicioDeSesion inicio = new frmInicioDeSesion();
-
+                inicio.Show();
             }
         }
     }
