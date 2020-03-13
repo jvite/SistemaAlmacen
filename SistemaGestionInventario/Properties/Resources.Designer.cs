@@ -83,6 +83,26 @@ namespace SistemaGestionInventario.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap arrow_repeat___236_ {
+            get {
+                object obj = ResourceManager.GetObject("arrow_repeat [#236]", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap arrow_repeat___242_ {
+            get {
+                object obj = ResourceManager.GetObject("arrow_repeat [#242]", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap car___646_ {
             get {
                 object obj = ResourceManager.GetObject("car [#646]", resourceCulture);

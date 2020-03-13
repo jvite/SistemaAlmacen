@@ -64,6 +64,25 @@
     <Compile Include="frmInicioDeSesion.Designer.cs">
       <DependentUpon>frmInicioDeSesion.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmSolicitudes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSolicitudes.Designer.cs">
+      <DependentUpon>frmSolicitudes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUserAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUserAdmin.Designer.cs">
+      <DependentUpon>frmUserAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUsuario.Designer.cs">
+      <DependentUpon>frmUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GenerarContrasena.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmAdministrador.resx">
@@ -74,6 +93,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmInicioDeSesion.resx">
       <DependentUpon>frmInicioDeSesion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSolicitudes.resx">
+      <DependentUpon>frmSolicitudes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUserAdmin.resx">
+      <DependentUpon>frmUserAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUsuario.resx">
+      <DependentUpon>frmUsuario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -181,6 +209,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\sigal-sw3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow_repeat [#242].png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow_repeat [#236].png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
