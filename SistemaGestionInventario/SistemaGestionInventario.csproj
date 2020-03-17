@@ -58,11 +58,29 @@
     <Compile Include="frmAlmacen.Designer.cs">
       <DependentUpon>frmAlmacen.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDashboard.Designer.cs">
+      <DependentUpon>frmDashboard.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmInicioDeSesion.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmInicioDeSesion.Designer.cs">
       <DependentUpon>frmInicioDeSesion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPerfil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPerfil.Designer.cs">
+      <DependentUpon>frmPerfil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProveedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProveedores.Designer.cs">
+      <DependentUpon>frmProveedores.cs</DependentUpon>
     </Compile>
     <Compile Include="frmSolicitudes.cs">
       <SubType>Form</SubType>
@@ -91,8 +109,17 @@
     <EmbeddedResource Include="frmAlmacen.resx">
       <DependentUpon>frmAlmacen.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmDashboard.resx">
+      <DependentUpon>frmDashboard.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmInicioDeSesion.resx">
       <DependentUpon>frmInicioDeSesion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPerfil.resx">
+      <DependentUpon>frmPerfil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProveedores.resx">
+      <DependentUpon>frmProveedores.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmSolicitudes.resx">
       <DependentUpon>frmSolicitudes.cs</DependentUpon>
@@ -215,6 +242,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\arrow_repeat [#236].png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lock_circle_close [#701].png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

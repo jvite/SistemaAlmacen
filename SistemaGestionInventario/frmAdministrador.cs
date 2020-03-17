@@ -69,7 +69,7 @@ namespace SistemaGestionInventario
             btnEscritorio.BackColor = Color.Transparent;
             btnEscritorio.ForeColor = Color.Silver;
         }
-
+        //////////////////////////////////////////////////////////////////////////////////////
         private void btnAlmacen_Click(object sender, EventArgs e)
         {
             abrirForm(new frmAlmacen()); //Se llama la función para abrir el formulario

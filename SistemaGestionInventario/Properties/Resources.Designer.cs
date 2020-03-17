@@ -243,6 +243,16 @@ namespace SistemaGestionInventario.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap lock_circle_close___701_ {
+            get {
+                object obj = ResourceManager.GetObject("lock_circle_close [#701]", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap money___1183_ {
             get {
                 object obj = ResourceManager.GetObject("money [#1183]", resourceCulture);

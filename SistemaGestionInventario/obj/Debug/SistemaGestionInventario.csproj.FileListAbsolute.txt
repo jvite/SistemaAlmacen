@@ -11,3 +11,7 @@ C:\Users\PROPIETARIO\source\repos\SistemaGestionInventario\SistemaGestionInventa
 C:\Users\PROPIETARIO\source\repos\SistemaGestionInventario\SistemaGestionInventario\obj\Debug\SistemaGestionInventario.frmInicioDeSesion.resources
 C:\Users\PROPIETARIO\source\repos\SistemaGestionInventario\SistemaGestionInventario\obj\Debug\SistemaGestionInventario.frmAlmacen.resources
 C:\Users\PROPIETARIO\source\repos\SistemaGestionInventario\SistemaGestionInventario\obj\Debug\SistemaGestionInventario.frmUserAdmin.resources
+C:\Users\PROPIETARIO\source\repos\SistemaGestionInventario\SistemaGestionInventario\obj\Debug\SistemaGestionInventario.frmSolicitudes.resources
+C:\Users\PROPIETARIO\source\repos\SistemaGestionInventario\SistemaGestionInventario\obj\Debug\SistemaGestionInventario.frmUsuario.resources
+C:\Users\PROPIETARIO\source\repos\SistemaGestionInventario\SistemaGestionInventario\obj\Debug\SistemaGestionInventario.frmDashboard.resources
+C:\Users\PROPIETARIO\source\repos\SistemaGestionInventario\SistemaGestionInventario\obj\Debug\SistemaGestionInventario.frmProveedores.resources
