@@ -246,5 +246,11 @@
   <ItemGroup>
     <None Include="Resources\lock_circle_close [#701].png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lock_open_round [#708].png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lock_open_round [#708].ico" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

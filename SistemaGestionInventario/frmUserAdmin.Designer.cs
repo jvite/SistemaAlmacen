@@ -51,6 +51,7 @@
             this.txtCorreo = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.btnBuscar = new System.Windows.Forms.Button();
             this.btnActualizar = new System.Windows.Forms.Button();
             this.btnGuardar = new System.Windows.Forms.Button();
@@ -77,7 +78,7 @@
             this.txtID.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtID.Location = new System.Drawing.Point(99, 52);
             this.txtID.Name = "txtID";
-            this.txtID.Size = new System.Drawing.Size(127, 28);
+            this.txtID.Size = new System.Drawing.Size(90, 28);
             this.txtID.TabIndex = 28;
             // 
             // dgvTabla
@@ -154,7 +155,7 @@
             this.txtApellidos.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtApellidos.Location = new System.Drawing.Point(99, 121);
             this.txtApellidos.Name = "txtApellidos";
-            this.txtApellidos.Size = new System.Drawing.Size(127, 28);
+            this.txtApellidos.Size = new System.Drawing.Size(145, 28);
             this.txtApellidos.TabIndex = 30;
             // 
             // lblNombre
@@ -173,7 +174,7 @@
             this.txtNombre.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNombre.Location = new System.Drawing.Point(99, 87);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(127, 28);
+            this.txtNombre.Size = new System.Drawing.Size(145, 28);
             this.txtNombre.TabIndex = 32;
             // 
             // lblUsuario
@@ -192,7 +193,7 @@
             this.txtUsuario.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUsuario.Location = new System.Drawing.Point(389, 52);
             this.txtUsuario.Name = "txtUsuario";
-            this.txtUsuario.Size = new System.Drawing.Size(127, 28);
+            this.txtUsuario.Size = new System.Drawing.Size(156, 28);
             this.txtUsuario.TabIndex = 34;
             // 
             // lblContrasena
@@ -211,7 +212,7 @@
             this.txtContrasena.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtContrasena.Location = new System.Drawing.Point(389, 90);
             this.txtContrasena.Name = "txtContrasena";
-            this.txtContrasena.Size = new System.Drawing.Size(127, 28);
+            this.txtContrasena.Size = new System.Drawing.Size(156, 28);
             this.txtContrasena.TabIndex = 36;
             // 
             // lblRol
@@ -228,9 +229,9 @@
             // txtRol
             // 
             this.txtRol.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtRol.Location = new System.Drawing.Point(389, 153);
+            this.txtRol.Location = new System.Drawing.Point(389, 156);
             this.txtRol.Name = "txtRol";
-            this.txtRol.Size = new System.Drawing.Size(127, 28);
+            this.txtRol.Size = new System.Drawing.Size(156, 28);
             this.txtRol.TabIndex = 38;
             // 
             // chbxMostrarContrsena
@@ -260,7 +261,7 @@
             this.txtCorreo.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCorreo.Location = new System.Drawing.Point(99, 156);
             this.txtCorreo.Name = "txtCorreo";
-            this.txtCorreo.Size = new System.Drawing.Size(127, 28);
+            this.txtCorreo.Size = new System.Drawing.Size(145, 28);
             this.txtCorreo.TabIndex = 41;
             // 
             // label3
@@ -281,6 +282,22 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(127, 28);
             this.textBox1.TabIndex = 43;
+            // 
+            // button1
+            // 
+            this.button1.BackgroundImage = global::SistemaGestionInventario.Properties.Resources.color4;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Image = global::SistemaGestionInventario.Properties.Resources.lock_open_round___708_1;
+            this.button1.Location = new System.Drawing.Point(341, 190);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(205, 36);
+            this.button1.TabIndex = 45;
+            this.button1.Text = "Reestablecer contraseña";
+            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // btnBuscar
             // 
@@ -375,6 +392,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(735, 538);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.lblCorreo);
@@ -445,5 +463,6 @@
         private System.Windows.Forms.TextBox txtCorreo;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button button1;
     }
 }
