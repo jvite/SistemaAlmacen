@@ -23,8 +23,7 @@ namespace SistemaGestionInventario
         {
             if (MessageBox.Show("Está a pundo de reestablecer la contraseña actual, ¿Desea continuar?", "Reestablecer contraseña", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) == DialogResult.Yes)
             {
-                //int c = GenerarContrasena(8);
-                //MessageBox.Show("La contraseña del usuario actual se reestableció con éxito. La contraseña es: " + c , "Reestablecer contraseña", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation);
+                MessageBox.Show("La contraseña actuales: " + GenerarContrasena.GenerarPassword(8), "Contraseña reestablecida con éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
     }
