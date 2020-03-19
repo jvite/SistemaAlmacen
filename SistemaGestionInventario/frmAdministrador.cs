@@ -36,6 +36,29 @@ namespace SistemaGestionInventario
             fh.Show();//se muestra el form
         }
 
+        private void coloresDefault()
+        {
+            //Color de la letra
+            btnAlmacen.ForeColor = Color.Silver;
+            btnCuenta.ForeColor = Color.Silver;
+            btnEscritorio.ForeColor = Color.Silver;
+            btnEstadisticas.ForeColor = Color.Silver;
+            btnFacturas.ForeColor = Color.Silver;
+            btnPagos.ForeColor = Color.Silver;
+            btnProveedores.ForeColor = Color.Silver;
+            btnReportes.ForeColor = Color.Silver;
+
+            //Color de fondo
+            btnAlmacen.BackColor = Color.Transparent;
+            btnCuenta.BackColor = Color.Transparent;
+            btnEscritorio.BackColor = Color.Transparent;
+            btnEstadisticas.BackColor = Color.Transparent;
+            btnFacturas.BackColor = Color.Transparent;
+            btnPagos.BackColor = Color.Transparent;
+            btnProveedores.BackColor = Color.Transparent;
+            btnReportes.BackColor = Color.Transparent;
+        }
+
         private void btnCerrar_Click(object sender, EventArgs e)
         {
            if(MessageBox.Show("¿Desea salir de SIGAL SW?", "Salir", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) == DialogResult.Yes)
@@ -72,7 +95,18 @@ namespace SistemaGestionInventario
         //////////////////////////////////////////////////////////////////////////////////////
         private void btnAlmacen_Click(object sender, EventArgs e)
         {
+            coloresDefault();
+            btnAlmacen.BackColor = Color.White;
+            btnAlmacen.ForeColor = Color.Gray;
             abrirForm(new frmAlmacen()); //Se llama la función para abrir el formulario
+        }
+
+        private void btnProveedores_Click(object sender, EventArgs e)
+        {
+            coloresDefault();
+            btnProveedores.BackColor = Color.White;
+            btnProveedores.ForeColor = Color.Gray;
+            abrirForm(new frmProveedores());
         }
 
         private void btnCerrarSesion_Click(object sender, EventArgs e)
@@ -84,5 +118,7 @@ namespace SistemaGestionInventario
                 inicio.Show();
             }
         }
+
+        
     }
 }

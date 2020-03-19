@@ -15,3 +15,4 @@ C:\Users\PROPIETARIO\source\repos\SistemaGestionInventario\SistemaGestionInventa
 C:\Users\PROPIETARIO\source\repos\SistemaGestionInventario\SistemaGestionInventario\obj\Debug\SistemaGestionInventario.frmUsuario.resources
 C:\Users\PROPIETARIO\source\repos\SistemaGestionInventario\SistemaGestionInventario\obj\Debug\SistemaGestionInventario.frmDashboard.resources
 C:\Users\PROPIETARIO\source\repos\SistemaGestionInventario\SistemaGestionInventario\obj\Debug\SistemaGestionInventario.frmProveedores.resources
+C:\Users\PROPIETARIO\source\repos\SistemaGestionInventario\SistemaGestionInventario\obj\Debug\SistemaGestionInventario.frmPerfil.resources

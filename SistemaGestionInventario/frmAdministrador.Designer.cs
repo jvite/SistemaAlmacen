@@ -228,13 +228,14 @@
             this.btnProveedores.ForeColor = System.Drawing.Color.Silver;
             this.btnProveedores.Image = global::SistemaGestionInventario.Properties.Resources.car___646_;
             this.btnProveedores.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnProveedores.Location = new System.Drawing.Point(-1, 339);
+            this.btnProveedores.Location = new System.Drawing.Point(0, 339);
             this.btnProveedores.Name = "btnProveedores";
             this.btnProveedores.Size = new System.Drawing.Size(192, 29);
             this.btnProveedores.TabIndex = 8;
             this.btnProveedores.Text = "Proveedores";
             this.btnProveedores.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnProveedores.UseVisualStyleBackColor = false;
+            this.btnProveedores.Click += new System.EventHandler(this.btnProveedores_Click);
             // 
             // pictureBox2
             // 
