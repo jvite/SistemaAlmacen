@@ -109,6 +109,14 @@ namespace SistemaGestionInventario
             abrirForm(new frmProveedores());
         }
 
+        private void btnAdministradorUsuarios_Click(object sender, EventArgs e)
+        {
+            coloresDefault();
+            btnAdministradorUsuarios.BackColor = Color.White;
+            btnAdministradorUsuarios.ForeColor = Color.Gray;
+            abrirForm(new frmUserAdmin());
+        }
+
         private void btnCerrarSesion_Click(object sender, EventArgs e)
         {
             if (MessageBox.Show("Está a punto de cerrar sesión, ¿Continuar?", "Cerrar sesión", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) == DialogResult.Yes)
@@ -119,6 +127,20 @@ namespace SistemaGestionInventario
             }
         }
 
-        
+        private void btnCuenta_Click(object sender, EventArgs e)
+        {
+            coloresDefault();
+            btnCuenta.BackColor = Color.White;
+            btnCuenta.ForeColor = Color.Gray;
+            abrirForm(new frmPerfil());
+        }
+
+        private void btnEscritorio_Click(object sender, EventArgs e)
+        {
+            coloresDefault();
+            btnEscritorio.BackColor = Color.White;
+            btnEscritorio.ForeColor = Color.Gray;
+            abrirForm(new frmDashboard());
+        }
     }
 }

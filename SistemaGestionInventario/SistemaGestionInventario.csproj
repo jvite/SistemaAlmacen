@@ -35,6 +35,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -251,6 +252,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\lock_open_round [#708].ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pie_curva21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unnamed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\profile_image_plus_round [#1327].ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\information [#1446].ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -36,6 +36,9 @@
             this.btnCerrar = new System.Windows.Forms.Button();
             this.plMenuContactos = new System.Windows.Forms.Panel();
             this.plMenuLateral = new System.Windows.Forms.Panel();
+            this.btnAcercaDe = new System.Windows.Forms.Button();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.btnAdministradorUsuarios = new System.Windows.Forms.Button();
             this.btnEstadisticas = new System.Windows.Forms.Button();
             this.btnFacturas = new System.Windows.Forms.Button();
             this.btnReportes = new System.Windows.Forms.Button();
@@ -53,6 +56,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbxSIGALSW)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.plMenuLateral.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxSeparador)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -127,6 +131,9 @@
             // plMenuLateral
             // 
             this.plMenuLateral.BackgroundImage = global::SistemaGestionInventario.Properties.Resources.color1;
+            this.plMenuLateral.Controls.Add(this.btnAcercaDe);
+            this.plMenuLateral.Controls.Add(this.pictureBox4);
+            this.plMenuLateral.Controls.Add(this.btnAdministradorUsuarios);
             this.plMenuLateral.Controls.Add(this.btnEstadisticas);
             this.plMenuLateral.Controls.Add(this.btnFacturas);
             this.plMenuLateral.Controls.Add(this.btnReportes);
@@ -145,6 +152,54 @@
             this.plMenuLateral.Name = "plMenuLateral";
             this.plMenuLateral.Size = new System.Drawing.Size(192, 639);
             this.plMenuLateral.TabIndex = 0;
+            // 
+            // btnAcercaDe
+            // 
+            this.btnAcercaDe.BackColor = System.Drawing.Color.Transparent;
+            this.btnAcercaDe.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnAcercaDe.FlatAppearance.BorderSize = 0;
+            this.btnAcercaDe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAcercaDe.Font = new System.Drawing.Font("Corbel", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAcercaDe.ForeColor = System.Drawing.Color.Silver;
+            this.btnAcercaDe.Image = global::SistemaGestionInventario.Properties.Resources.information___1446_;
+            this.btnAcercaDe.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAcercaDe.Location = new System.Drawing.Point(0, 540);
+            this.btnAcercaDe.Name = "btnAcercaDe";
+            this.btnAcercaDe.Size = new System.Drawing.Size(192, 29);
+            this.btnAcercaDe.TabIndex = 14;
+            this.btnAcercaDe.Text = "Acerca de...";
+            this.btnAcercaDe.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnAcercaDe.UseVisualStyleBackColor = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox4.Image = global::SistemaGestionInventario.Properties.Resources.linea;
+            this.pictureBox4.Location = new System.Drawing.Point(0, 489);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(192, 25);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 13;
+            this.pictureBox4.TabStop = false;
+            // 
+            // btnAdministradorUsuarios
+            // 
+            this.btnAdministradorUsuarios.BackColor = System.Drawing.Color.Transparent;
+            this.btnAdministradorUsuarios.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnAdministradorUsuarios.FlatAppearance.BorderSize = 0;
+            this.btnAdministradorUsuarios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAdministradorUsuarios.Font = new System.Drawing.Font("Corbel", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdministradorUsuarios.ForeColor = System.Drawing.Color.Silver;
+            this.btnAdministradorUsuarios.Image = global::SistemaGestionInventario.Properties.Resources.profile_image_plus_round___1327_;
+            this.btnAdministradorUsuarios.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAdministradorUsuarios.Location = new System.Drawing.Point(0, 512);
+            this.btnAdministradorUsuarios.Name = "btnAdministradorUsuarios";
+            this.btnAdministradorUsuarios.Size = new System.Drawing.Size(192, 29);
+            this.btnAdministradorUsuarios.TabIndex = 12;
+            this.btnAdministradorUsuarios.Text = "Admin. de usuarios";
+            this.btnAdministradorUsuarios.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnAdministradorUsuarios.UseVisualStyleBackColor = false;
+            this.btnAdministradorUsuarios.Click += new System.EventHandler(this.btnAdministradorUsuarios_Click);
             // 
             // btnEstadisticas
             // 
@@ -241,7 +296,7 @@
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.Image = global::SistemaGestionInventario.Properties.Resources.linea;
-            this.pictureBox2.Location = new System.Drawing.Point(0, 287);
+            this.pictureBox2.Location = new System.Drawing.Point(0, 288);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(192, 25);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -277,13 +332,14 @@
             this.btnEscritorio.ForeColor = System.Drawing.Color.Silver;
             this.btnEscritorio.Image = global::SistemaGestionInventario.Properties.Resources.desktop___232_;
             this.btnEscritorio.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEscritorio.Location = new System.Drawing.Point(0, 255);
+            this.btnEscritorio.Location = new System.Drawing.Point(0, 257);
             this.btnEscritorio.Name = "btnEscritorio";
             this.btnEscritorio.Size = new System.Drawing.Size(192, 29);
             this.btnEscritorio.TabIndex = 6;
             this.btnEscritorio.Text = "Escritorio";
             this.btnEscritorio.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnEscritorio.UseVisualStyleBackColor = false;
+            this.btnEscritorio.Click += new System.EventHandler(this.btnEscritorio_Click);
             this.btnEscritorio.MouseEnter += new System.EventHandler(this.btnEscritorio_MouseEnter);
             this.btnEscritorio.MouseLeave += new System.EventHandler(this.btnEscritorio_MouseLeave);
             // 
@@ -297,13 +353,14 @@
             this.btnCuenta.ForeColor = System.Drawing.Color.Silver;
             this.btnCuenta.Image = global::SistemaGestionInventario.Properties.Resources.profile___1335_1;
             this.btnCuenta.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCuenta.Location = new System.Drawing.Point(0, 211);
+            this.btnCuenta.Location = new System.Drawing.Point(0, 213);
             this.btnCuenta.Name = "btnCuenta";
             this.btnCuenta.Size = new System.Drawing.Size(191, 29);
             this.btnCuenta.TabIndex = 5;
             this.btnCuenta.Text = "Cuenta";
             this.btnCuenta.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnCuenta.UseVisualStyleBackColor = false;
+            this.btnCuenta.Click += new System.EventHandler(this.btnCuenta_Click);
             this.btnCuenta.MouseEnter += new System.EventHandler(this.btnCuenta_MouseEnter);
             this.btnCuenta.MouseLeave += new System.EventHandler(this.btnCuenta_MouseLeave);
             // 
@@ -311,7 +368,7 @@
             // 
             this.pbxSeparador.BackColor = System.Drawing.Color.Transparent;
             this.pbxSeparador.Image = global::SistemaGestionInventario.Properties.Resources.linea;
-            this.pbxSeparador.Location = new System.Drawing.Point(0, 237);
+            this.pbxSeparador.Location = new System.Drawing.Point(0, 239);
             this.pbxSeparador.Name = "pbxSeparador";
             this.pbxSeparador.Size = new System.Drawing.Size(192, 25);
             this.pbxSeparador.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -385,6 +442,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.plMenuLateral.ResumeLayout(false);
             this.plMenuLateral.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxSeparador)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -416,6 +474,9 @@
         private System.Windows.Forms.Panel plContenedor;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pbxSIGALSW;
+        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.Button btnAdministradorUsuarios;
+        private System.Windows.Forms.Button btnAcercaDe;
     }
 }
 
