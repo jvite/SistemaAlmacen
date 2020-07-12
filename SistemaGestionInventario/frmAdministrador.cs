@@ -92,12 +92,108 @@ namespace SistemaGestionInventario
             btnEscritorio.BackColor = Color.Transparent;
             btnEscritorio.ForeColor = Color.Silver;
         }
-        //////////////////////////////////////////////////////////////////////////////////////
+        /////////////////////////////////////EVENTOS BOTON ALMACEN/////////////////////////////////////
+        private void btnAlmacen_MouseEnter(object sender, EventArgs e)
+        {
+            btnAlmacen.BackColor = Color.FromArgb(38, 50, 56);
+            btnAlmacen.ForeColor = Color.White;
+        }
+
+        private void btnAlmacen_MouseLeave(object sender, EventArgs e)
+        {
+            btnAlmacen.ForeColor = Color.Silver;
+            btnAlmacen.BackColor = Color.Transparent;
+        }
+        /////////////////////////////////////EVENTOS BOTON PROVEEDORES/////////////////////////////////////
+        private void btnProveedores_MouseEnter(object sender, EventArgs e)
+        {
+            btnProveedores.BackColor = Color.FromArgb(38, 50, 56);
+            btnProveedores.ForeColor = Color.White;
+        }
+
+        private void btnProveedores_MouseLeave(object sender, EventArgs e)
+        {
+            btnProveedores.ForeColor = Color.Silver;
+            btnProveedores.BackColor = Color.Transparent;
+        }
+        /////////////////////////////////////EVENTOS BOTON REPORTES/////////////////////////////////////
+        private void btnReportes_MouseEnter(object sender, EventArgs e)
+        {
+            btnReportes.BackColor = Color.FromArgb(38, 50, 56);
+            btnReportes.ForeColor = Color.White;
+        }
+
+        private void btnReportes_MouseLeave(object sender, EventArgs e)
+        {
+            btnReportes.ForeColor = Color.Silver;
+            btnReportes.BackColor = Color.Transparent;
+        }
+        /////////////////////////////////////EVENTOS BOTON PAGOS/////////////////////////////////////
+        private void btnPagos_MouseEnter(object sender, EventArgs e)
+        {
+            btnPagos.BackColor = Color.FromArgb(38, 50, 56);
+            btnPagos.ForeColor = Color.White;
+        }
+
+        private void btnPagos_MouseLeave(object sender, EventArgs e)
+        {
+            btnPagos.ForeColor = Color.Silver;
+            btnPagos.BackColor = Color.Transparent;
+        }
+        /////////////////////////////////////EVENTOS BOTON FACTURAS/////////////////////////////////////
+        private void btnFacturas_MouseEnter(object sender, EventArgs e)
+        {
+            btnFacturas.BackColor = Color.FromArgb(38, 50, 56);
+            btnFacturas.ForeColor = Color.White;
+        }
+
+        private void btnFacturas_MouseLeave(object sender, EventArgs e)
+        {
+            btnFacturas.ForeColor = Color.Silver;
+            btnFacturas.BackColor = Color.Transparent;
+        }
+        /////////////////////////////////////EVENTOS BOTON ESTADISTICAS/////////////////////////////////////
+        private void btnEstadisticas_MouseEnter(object sender, EventArgs e)
+        {
+            btnEstadisticas.BackColor = Color.FromArgb(38, 50, 56);
+            btnEstadisticas.ForeColor = Color.White;
+        }
+
+        private void btnEstadisticas_MouseLeave(object sender, EventArgs e)
+        {
+            btnEstadisticas.ForeColor = Color.Silver;
+            btnEstadisticas.BackColor = Color.Transparent;
+        }
+        /////////////////////////////////////EVENTOS BOTON ADMINISTRADOR/////////////////////////////////////
+        private void btnAdministradorUsuarios_MouseEnter(object sender, EventArgs e)
+        {
+            btnAdministradorUsuarios.BackColor = Color.FromArgb(38, 50, 56);
+            btnAdministradorUsuarios.ForeColor = Color.White;
+        }
+
+        private void btnAdministradorUsuarios_MouseLeave(object sender, EventArgs e)
+        {
+            btnAdministradorUsuarios.ForeColor = Color.Silver;
+            btnAdministradorUsuarios.BackColor = Color.Transparent;
+        }
+        /////////////////////////////////////EVENTOS BOTON ACERCA DE/////////////////////////////////////
+        private void btnAcercaDe_MouseEnter(object sender, EventArgs e)
+        {
+            btnAcercaDe.BackColor = Color.FromArgb(38, 50, 56);
+            btnAcercaDe.ForeColor = Color.White;
+        }
+
+        private void btnAcercaDe_MouseLeave(object sender, EventArgs e)
+        {
+            btnAcercaDe.ForeColor = Color.Silver;
+            btnAcercaDe.BackColor = Color.Transparent;
+        }
+        //////////////////////////////////////ABRIR FORMULARIOS CON BOTONES////////////////////////////////////////////////
         private void btnAlmacen_Click(object sender, EventArgs e)
         {
-            coloresDefault();
-            btnAlmacen.BackColor = Color.White;
-            btnAlmacen.ForeColor = Color.Gray;
+            coloresDefault(); //Se restablecen los colores por defecto
+            btnAlmacen.BackColor = Color.White; //Se cambia el color del boton a blanco
+            btnAlmacen.ForeColor = Color.Gray; //Se cambia el color de la fuente del boton a gris
             abrirForm(new frmAlmacen()); //Se llama la función para abrir el formulario
         }
 
@@ -117,16 +213,6 @@ namespace SistemaGestionInventario
             abrirForm(new frmUserAdmin());
         }
 
-        private void btnCerrarSesion_Click(object sender, EventArgs e)
-        {
-            if (MessageBox.Show("Está a punto de cerrar sesión, ¿Continuar?", "Cerrar sesión", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) == DialogResult.Yes)
-            {
-                this.Dispose();
-                frmInicioDeSesion inicio = new frmInicioDeSesion();
-                inicio.Show();
-            }
-        }
-
         private void btnCuenta_Click(object sender, EventArgs e)
         {
             coloresDefault();
@@ -142,5 +228,18 @@ namespace SistemaGestionInventario
             btnEscritorio.ForeColor = Color.Gray;
             abrirForm(new frmDashboard());
         }
+        //////////////////////////////////////////////////////////////////////////////////////
+
+        /////////////////////////////////////////CERRAR SESIÓN/////////////////////////////////////////////
+        private void btnCerrarSesion_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Está a punto de cerrar sesión, ¿Continuar?", "Cerrar sesión", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) == DialogResult.Yes)
+            {
+                this.Dispose();
+                frmInicioDeSesion inicio = new frmInicioDeSesion();
+                inicio.Show();
+            }
+        }
+        //////////////////////////////////////////////////////////////////////////////////////
     }
 }

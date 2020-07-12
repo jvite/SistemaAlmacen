@@ -170,6 +170,8 @@
             this.btnAcercaDe.Text = "Acerca de...";
             this.btnAcercaDe.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnAcercaDe.UseVisualStyleBackColor = false;
+            this.btnAcercaDe.MouseEnter += new System.EventHandler(this.btnAcercaDe_MouseEnter);
+            this.btnAcercaDe.MouseLeave += new System.EventHandler(this.btnAcercaDe_MouseLeave);
             // 
             // pictureBox4
             // 
@@ -200,6 +202,8 @@
             this.btnAdministradorUsuarios.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnAdministradorUsuarios.UseVisualStyleBackColor = false;
             this.btnAdministradorUsuarios.Click += new System.EventHandler(this.btnAdministradorUsuarios_Click);
+            this.btnAdministradorUsuarios.MouseEnter += new System.EventHandler(this.btnAdministradorUsuarios_MouseEnter);
+            this.btnAdministradorUsuarios.MouseLeave += new System.EventHandler(this.btnAdministradorUsuarios_MouseLeave);
             // 
             // btnEstadisticas
             // 
@@ -218,6 +222,8 @@
             this.btnEstadisticas.Text = "Estadisticas";
             this.btnEstadisticas.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnEstadisticas.UseVisualStyleBackColor = false;
+            this.btnEstadisticas.MouseEnter += new System.EventHandler(this.btnEstadisticas_MouseEnter);
+            this.btnEstadisticas.MouseLeave += new System.EventHandler(this.btnEstadisticas_MouseLeave);
             // 
             // btnFacturas
             // 
@@ -236,6 +242,8 @@
             this.btnFacturas.Text = "Facturas";
             this.btnFacturas.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnFacturas.UseVisualStyleBackColor = false;
+            this.btnFacturas.MouseEnter += new System.EventHandler(this.btnFacturas_MouseEnter);
+            this.btnFacturas.MouseLeave += new System.EventHandler(this.btnFacturas_MouseLeave);
             // 
             // btnReportes
             // 
@@ -254,6 +262,8 @@
             this.btnReportes.Text = "Reportes";
             this.btnReportes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnReportes.UseVisualStyleBackColor = false;
+            this.btnReportes.MouseEnter += new System.EventHandler(this.btnReportes_MouseEnter);
+            this.btnReportes.MouseLeave += new System.EventHandler(this.btnReportes_MouseLeave);
             // 
             // btnPagos
             // 
@@ -272,6 +282,8 @@
             this.btnPagos.Text = "Pagos";
             this.btnPagos.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnPagos.UseVisualStyleBackColor = false;
+            this.btnPagos.MouseEnter += new System.EventHandler(this.btnPagos_MouseEnter);
+            this.btnPagos.MouseLeave += new System.EventHandler(this.btnPagos_MouseLeave);
             // 
             // btnProveedores
             // 
@@ -291,6 +303,8 @@
             this.btnProveedores.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnProveedores.UseVisualStyleBackColor = false;
             this.btnProveedores.Click += new System.EventHandler(this.btnProveedores_Click);
+            this.btnProveedores.MouseEnter += new System.EventHandler(this.btnProveedores_MouseEnter);
+            this.btnProveedores.MouseLeave += new System.EventHandler(this.btnProveedores_MouseLeave);
             // 
             // pictureBox2
             // 
@@ -321,6 +335,8 @@
             this.btnAlmacen.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnAlmacen.UseVisualStyleBackColor = false;
             this.btnAlmacen.Click += new System.EventHandler(this.btnAlmacen_Click);
+            this.btnAlmacen.MouseEnter += new System.EventHandler(this.btnAlmacen_MouseEnter);
+            this.btnAlmacen.MouseLeave += new System.EventHandler(this.btnAlmacen_MouseLeave);
             // 
             // btnEscritorio
             // 
