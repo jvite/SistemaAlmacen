@@ -16,5 +16,10 @@ namespace SistemaGestionInventario
         {
             InitializeComponent();
         }
+
+        private void frmAlmacen_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

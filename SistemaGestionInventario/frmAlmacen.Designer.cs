@@ -42,6 +42,14 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.lblID = new System.Windows.Forms.Label();
             this.txtID = new System.Windows.Forms.TextBox();
+            this.lblArticulo = new System.Windows.Forms.Label();
+            this.txtArticulo = new System.Windows.Forms.TextBox();
+            this.lblDescripcion = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.lblProveedor = new System.Windows.Forms.Label();
+            this.txtProveedor = new System.Windows.Forms.TextBox();
+            this.lblEnExistencia = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTabla)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
@@ -205,10 +213,86 @@
             // txtID
             // 
             this.txtID.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtID.Location = new System.Drawing.Point(99, 52);
+            this.txtID.Location = new System.Drawing.Point(174, 52);
             this.txtID.Name = "txtID";
             this.txtID.Size = new System.Drawing.Size(127, 28);
             this.txtID.TabIndex = 14;
+            // 
+            // lblArticulo
+            // 
+            this.lblArticulo.AutoSize = true;
+            this.lblArticulo.BackColor = System.Drawing.Color.Transparent;
+            this.lblArticulo.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblArticulo.Location = new System.Drawing.Point(16, 91);
+            this.lblArticulo.Name = "lblArticulo";
+            this.lblArticulo.Size = new System.Drawing.Size(70, 21);
+            this.lblArticulo.TabIndex = 17;
+            this.lblArticulo.Text = "Articulo:";
+            // 
+            // txtArticulo
+            // 
+            this.txtArticulo.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtArticulo.Location = new System.Drawing.Point(174, 88);
+            this.txtArticulo.Name = "txtArticulo";
+            this.txtArticulo.Size = new System.Drawing.Size(127, 28);
+            this.txtArticulo.TabIndex = 16;
+            // 
+            // lblDescripcion
+            // 
+            this.lblDescripcion.AutoSize = true;
+            this.lblDescripcion.BackColor = System.Drawing.Color.Transparent;
+            this.lblDescripcion.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDescripcion.Location = new System.Drawing.Point(16, 125);
+            this.lblDescripcion.Name = "lblDescripcion";
+            this.lblDescripcion.Size = new System.Drawing.Size(95, 21);
+            this.lblDescripcion.TabIndex = 19;
+            this.lblDescripcion.Text = "Descripción:";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(174, 122);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(127, 28);
+            this.textBox1.TabIndex = 18;
+            // 
+            // lblProveedor
+            // 
+            this.lblProveedor.AutoSize = true;
+            this.lblProveedor.BackColor = System.Drawing.Color.Transparent;
+            this.lblProveedor.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblProveedor.Location = new System.Drawing.Point(16, 159);
+            this.lblProveedor.Name = "lblProveedor";
+            this.lblProveedor.Size = new System.Drawing.Size(87, 21);
+            this.lblProveedor.TabIndex = 21;
+            this.lblProveedor.Text = "Proveedor:";
+            // 
+            // txtProveedor
+            // 
+            this.txtProveedor.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtProveedor.Location = new System.Drawing.Point(174, 156);
+            this.txtProveedor.Name = "txtProveedor";
+            this.txtProveedor.Size = new System.Drawing.Size(127, 28);
+            this.txtProveedor.TabIndex = 20;
+            // 
+            // lblEnExistencia
+            // 
+            this.lblEnExistencia.AutoSize = true;
+            this.lblEnExistencia.BackColor = System.Drawing.Color.Transparent;
+            this.lblEnExistencia.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEnExistencia.Location = new System.Drawing.Point(16, 191);
+            this.lblEnExistencia.Name = "lblEnExistencia";
+            this.lblEnExistencia.Size = new System.Drawing.Size(171, 21);
+            this.lblEnExistencia.TabIndex = 23;
+            this.lblEnExistencia.Text = "Unidades en existencia:";
+            // 
+            // textBox2
+            // 
+            this.textBox2.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2.Location = new System.Drawing.Point(187, 188);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(114, 28);
+            this.textBox2.TabIndex = 22;
             // 
             // frmAlmacen
             // 
@@ -216,6 +300,14 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(735, 538);
+            this.Controls.Add(this.lblEnExistencia);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.lblProveedor);
+            this.Controls.Add(this.txtProveedor);
+            this.Controls.Add(this.lblDescripcion);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.lblArticulo);
+            this.Controls.Add(this.txtArticulo);
             this.Controls.Add(this.lblID);
             this.Controls.Add(this.txtID);
             this.Controls.Add(this.dgvTabla);
@@ -233,6 +325,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmAlmacen";
             this.Text = "Almacen";
+            this.Load += new System.EventHandler(this.frmAlmacen_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvTabla)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
@@ -256,5 +349,13 @@
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label lblID;
         private System.Windows.Forms.TextBox txtID;
+        private System.Windows.Forms.Label lblArticulo;
+        private System.Windows.Forms.TextBox txtArticulo;
+        private System.Windows.Forms.Label lblDescripcion;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label lblProveedor;
+        private System.Windows.Forms.TextBox txtProveedor;
+        private System.Windows.Forms.Label lblEnExistencia;
+        private System.Windows.Forms.TextBox textBox2;
     }
 }

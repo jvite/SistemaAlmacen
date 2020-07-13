@@ -34,7 +34,7 @@
             this.lblUsuario = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.lblRecuperarP = new System.Windows.Forms.LinkLabel();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnAcceder = new System.Windows.Forms.Button();
             this.btnCerrar = new System.Windows.Forms.Button();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -103,20 +103,20 @@
             this.lblRecuperarP.TabStop = true;
             this.lblRecuperarP.Text = "¿Olvidó su contraseña?";
             // 
-            // button1
+            // btnAcceder
             // 
-            this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Image = global::SistemaGestionInventario.Properties.Resources.arrow_in_right___385_;
-            this.button1.Location = new System.Drawing.Point(203, 372);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(77, 75);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "Acceder";
-            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnAcceder.BackColor = System.Drawing.Color.Transparent;
+            this.btnAcceder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAcceder.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAcceder.Image = global::SistemaGestionInventario.Properties.Resources.arrow_in_right___385_;
+            this.btnAcceder.Location = new System.Drawing.Point(203, 372);
+            this.btnAcceder.Name = "btnAcceder";
+            this.btnAcceder.Size = new System.Drawing.Size(77, 75);
+            this.btnAcceder.TabIndex = 6;
+            this.btnAcceder.Text = "Acceder";
+            this.btnAcceder.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnAcceder.UseVisualStyleBackColor = false;
+            this.btnAcceder.Click += new System.EventHandler(this.button1_Click);
             // 
             // btnCerrar
             // 
@@ -154,7 +154,7 @@
             this.ControlBox = false;
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.btnCerrar);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnAcceder);
             this.Controls.Add(this.lblRecuperarP);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblUsuario);
@@ -179,7 +179,7 @@
         private System.Windows.Forms.Label lblUsuario;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.LinkLabel lblRecuperarP;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnAcceder;
         private System.Windows.Forms.Button btnCerrar;
         private System.Windows.Forms.LinkLabel linkLabel1;
     }

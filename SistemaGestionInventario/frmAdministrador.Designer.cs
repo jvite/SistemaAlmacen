@@ -68,7 +68,7 @@
             this.plContenedor.BackColor = System.Drawing.Color.Transparent;
             this.plContenedor.Location = new System.Drawing.Point(198, 91);
             this.plContenedor.Name = "plContenedor";
-            this.plContenedor.Size = new System.Drawing.Size(751, 541);
+            this.plContenedor.Size = new System.Drawing.Size(751, 548);
             this.plContenedor.TabIndex = 4;
             // 
             // pbxSIGALSW
@@ -125,7 +125,7 @@
             this.plMenuContactos.BackgroundImage = global::SistemaGestionInventario.Properties.Resources.color1;
             this.plMenuContactos.Location = new System.Drawing.Point(955, 0);
             this.plMenuContactos.Name = "plMenuContactos";
-            this.plMenuContactos.Size = new System.Drawing.Size(56, 639);
+            this.plMenuContactos.Size = new System.Drawing.Size(56, 645);
             this.plMenuContactos.TabIndex = 1;
             // 
             // plMenuLateral
@@ -150,7 +150,7 @@
             this.plMenuLateral.Controls.Add(this.pbxImagenPerfil);
             this.plMenuLateral.Location = new System.Drawing.Point(0, 0);
             this.plMenuLateral.Name = "plMenuLateral";
-            this.plMenuLateral.Size = new System.Drawing.Size(192, 639);
+            this.plMenuLateral.Size = new System.Drawing.Size(192, 645);
             this.plMenuLateral.TabIndex = 0;
             // 
             // btnAcercaDe
@@ -451,7 +451,7 @@
             this.Controls.Add(this.plMenuLateral);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmAdministrador";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SIGAL SW - Administrador";
             this.Load += new System.EventHandler(this.frmAlmacen_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbxSIGALSW)).EndInit();
