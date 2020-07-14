@@ -287,7 +287,7 @@
             // 
             this.button1.BackgroundImage = global::SistemaGestionInventario.Properties.Resources.color4;
             this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button1.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Image = global::SistemaGestionInventario.Properties.Resources.lock_open_round___708_1;
             this.button1.Location = new System.Drawing.Point(341, 190);
@@ -303,7 +303,7 @@
             // 
             this.btnBuscar.BackgroundImage = global::SistemaGestionInventario.Properties.Resources.color4;
             this.btnBuscar.FlatAppearance.BorderSize = 0;
-            this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnBuscar.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBuscar.Image = global::SistemaGestionInventario.Properties.Resources.search_right___1505_;
             this.btnBuscar.Location = new System.Drawing.Point(600, 257);
@@ -318,7 +318,7 @@
             // 
             this.btnActualizar.BackgroundImage = global::SistemaGestionInventario.Properties.Resources.color5;
             this.btnActualizar.FlatAppearance.BorderSize = 0;
-            this.btnActualizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnActualizar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnActualizar.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnActualizar.Image = global::SistemaGestionInventario.Properties.Resources.arrow_repeat___236_;
             this.btnActualizar.Location = new System.Drawing.Point(592, 177);
@@ -333,7 +333,7 @@
             // 
             this.btnGuardar.BackgroundImage = global::SistemaGestionInventario.Properties.Resources.color4;
             this.btnGuardar.FlatAppearance.BorderSize = 0;
-            this.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnGuardar.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGuardar.Image = global::SistemaGestionInventario.Properties.Resources.save_item___1411_;
             this.btnGuardar.Location = new System.Drawing.Point(592, 67);
@@ -349,7 +349,7 @@
             // 
             this.btnEliminar.BackgroundImage = global::SistemaGestionInventario.Properties.Resources.color3;
             this.btnEliminar.FlatAppearance.BorderSize = 0;
-            this.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnEliminar.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEliminar.Image = global::SistemaGestionInventario.Properties.Resources.delete___1487_;
             this.btnEliminar.Location = new System.Drawing.Point(592, 122);
@@ -364,7 +364,7 @@
             // 
             this.btnNuevo.BackgroundImage = global::SistemaGestionInventario.Properties.Resources.color2;
             this.btnNuevo.FlatAppearance.BorderSize = 0;
-            this.btnNuevo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNuevo.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnNuevo.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNuevo.Image = global::SistemaGestionInventario.Properties.Resources.plus_circle___1425_;
             this.btnNuevo.Location = new System.Drawing.Point(592, 12);

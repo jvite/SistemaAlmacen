@@ -50,6 +50,10 @@
             this.txtProveedor = new System.Windows.Forms.TextBox();
             this.lblEnExistencia = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.cbxActivo = new System.Windows.Forms.ComboBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.dtpFechaEntrada = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTabla)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
@@ -116,7 +120,7 @@
             // 
             this.btnBuscar.BackgroundImage = global::SistemaGestionInventario.Properties.Resources.color4;
             this.btnBuscar.FlatAppearance.BorderSize = 0;
-            this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnBuscar.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBuscar.Image = global::SistemaGestionInventario.Properties.Resources.search_right___1505_;
             this.btnBuscar.Location = new System.Drawing.Point(600, 257);
@@ -131,7 +135,7 @@
             // 
             this.btnActualizar.BackgroundImage = global::SistemaGestionInventario.Properties.Resources.color5;
             this.btnActualizar.FlatAppearance.BorderSize = 0;
-            this.btnActualizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnActualizar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnActualizar.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnActualizar.Image = global::SistemaGestionInventario.Properties.Resources.arrow_repeat___236_;
             this.btnActualizar.Location = new System.Drawing.Point(592, 177);
@@ -146,7 +150,7 @@
             // 
             this.btnGuardar.BackgroundImage = global::SistemaGestionInventario.Properties.Resources.color4;
             this.btnGuardar.FlatAppearance.BorderSize = 0;
-            this.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnGuardar.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGuardar.Image = global::SistemaGestionInventario.Properties.Resources.save_item___1411_;
             this.btnGuardar.Location = new System.Drawing.Point(592, 67);
@@ -162,7 +166,7 @@
             // 
             this.btnEliminar.BackgroundImage = global::SistemaGestionInventario.Properties.Resources.color3;
             this.btnEliminar.FlatAppearance.BorderSize = 0;
-            this.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnEliminar.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEliminar.Image = global::SistemaGestionInventario.Properties.Resources.delete___1487_;
             this.btnEliminar.Location = new System.Drawing.Point(592, 122);
@@ -177,7 +181,7 @@
             // 
             this.btnNuevo.BackgroundImage = global::SistemaGestionInventario.Properties.Resources.color2;
             this.btnNuevo.FlatAppearance.BorderSize = 0;
-            this.btnNuevo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNuevo.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnNuevo.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNuevo.Image = global::SistemaGestionInventario.Properties.Resources.plus_circle___1425_;
             this.btnNuevo.Location = new System.Drawing.Point(592, 12);
@@ -294,12 +298,55 @@
             this.textBox2.Size = new System.Drawing.Size(114, 28);
             this.textBox2.TabIndex = 22;
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(318, 129);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(59, 21);
+            this.label3.TabIndex = 24;
+            this.label3.Text = "Activo:";
+            // 
+            // cbxActivo
+            // 
+            this.cbxActivo.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbxActivo.FormattingEnabled = true;
+            this.cbxActivo.Location = new System.Drawing.Point(404, 126);
+            this.cbxActivo.Name = "cbxActivo";
+            this.cbxActivo.Size = new System.Drawing.Size(127, 29);
+            this.cbxActivo.TabIndex = 25;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(315, 56);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(132, 21);
+            this.label4.TabIndex = 27;
+            this.label4.Text = "Fecha de entrada:";
+            // 
+            // dtpFechaEntrada
+            // 
+            this.dtpFechaEntrada.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpFechaEntrada.Location = new System.Drawing.Point(319, 85);
+            this.dtpFechaEntrada.Name = "dtpFechaEntrada";
+            this.dtpFechaEntrada.Size = new System.Drawing.Size(212, 27);
+            this.dtpFechaEntrada.TabIndex = 28;
+            // 
             // frmAlmacen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(735, 538);
+            this.Controls.Add(this.dtpFechaEntrada);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.cbxActivo);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.lblEnExistencia);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.lblProveedor);
@@ -357,5 +404,9 @@
         private System.Windows.Forms.TextBox txtProveedor;
         private System.Windows.Forms.Label lblEnExistencia;
         private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.ComboBox cbxActivo;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.DateTimePicker dtpFechaEntrada;
     }
 }

@@ -29,8 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPerfil));
-            this.lblID = new System.Windows.Forms.Label();
-            this.txtID = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -46,34 +44,26 @@
             this.btnNuevo = new System.Windows.Forms.Button();
             this.pbxImagenPerfil = new System.Windows.Forms.PictureBox();
             this.btnGuardar = new System.Windows.Forms.Button();
+            this.btnSeleccionarImagen = new System.Windows.Forms.Button();
+            this.label7 = new System.Windows.Forms.Label();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.lblTitulo = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pbxImagenPerfil)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // lblID
-            // 
-            this.lblID.AutoSize = true;
-            this.lblID.BackColor = System.Drawing.Color.Transparent;
-            this.lblID.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblID.Location = new System.Drawing.Point(86, 177);
-            this.lblID.Name = "lblID";
-            this.lblID.Size = new System.Drawing.Size(29, 21);
-            this.lblID.TabIndex = 31;
-            this.lblID.Text = "ID:";
-            // 
-            // txtID
-            // 
-            this.txtID.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtID.Location = new System.Drawing.Point(204, 174);
-            this.txtID.Name = "txtID";
-            this.txtID.Size = new System.Drawing.Size(102, 28);
-            this.txtID.TabIndex = 30;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(86, 211);
+            this.label1.Location = new System.Drawing.Point(9, 195);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(89, 21);
             this.label1.TabIndex = 33;
@@ -82,7 +72,7 @@
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(204, 208);
+            this.textBox1.Location = new System.Drawing.Point(126, 192);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(227, 28);
             this.textBox1.TabIndex = 32;
@@ -92,7 +82,7 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(86, 245);
+            this.label2.Location = new System.Drawing.Point(9, 229);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(89, 21);
             this.label2.TabIndex = 35;
@@ -101,7 +91,7 @@
             // textBox2
             // 
             this.textBox2.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(204, 242);
+            this.textBox2.Location = new System.Drawing.Point(126, 226);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(227, 28);
             this.textBox2.TabIndex = 34;
@@ -111,7 +101,7 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(86, 279);
+            this.label3.Location = new System.Drawing.Point(9, 263);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(156, 21);
             this.label3.TabIndex = 37;
@@ -120,11 +110,11 @@
             // dateTimePicker1
             // 
             this.dateTimePicker1.CalendarFont = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Location = new System.Drawing.Point(124, 303);
+            this.dateTimePicker1.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePicker1.Location = new System.Drawing.Point(13, 287);
             this.dateTimePicker1.MinDate = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(281, 28);
+            this.dateTimePicker1.Size = new System.Drawing.Size(275, 27);
             this.dateTimePicker1.TabIndex = 38;
             // 
             // label4
@@ -132,7 +122,7 @@
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(86, 341);
+            this.label4.Location = new System.Drawing.Point(9, 329);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(74, 21);
             this.label4.TabIndex = 40;
@@ -141,7 +131,7 @@
             // textBox3
             // 
             this.textBox3.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(204, 338);
+            this.textBox3.Location = new System.Drawing.Point(126, 329);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(167, 28);
             this.textBox3.TabIndex = 39;
@@ -151,7 +141,7 @@
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(86, 375);
+            this.label5.Location = new System.Drawing.Point(9, 366);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(62, 21);
             this.label5.TabIndex = 42;
@@ -160,7 +150,7 @@
             // textBox4
             // 
             this.textBox4.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(204, 372);
+            this.textBox4.Location = new System.Drawing.Point(126, 363);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(167, 28);
             this.textBox4.TabIndex = 41;
@@ -170,7 +160,7 @@
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(86, 409);
+            this.label6.Location = new System.Drawing.Point(9, 404);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(68, 21);
             this.label6.TabIndex = 44;
@@ -179,7 +169,7 @@
             // textBox5
             // 
             this.textBox5.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(204, 406);
+            this.textBox5.Location = new System.Drawing.Point(126, 397);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(167, 28);
             this.textBox5.TabIndex = 43;
@@ -188,10 +178,10 @@
             // 
             this.btnNuevo.BackgroundImage = global::SistemaGestionInventario.Properties.Resources.color2;
             this.btnNuevo.FlatAppearance.BorderSize = 0;
-            this.btnNuevo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNuevo.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnNuevo.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNuevo.Image = global::SistemaGestionInventario.Properties.Resources.lock_circle_close___701_;
-            this.btnNuevo.Location = new System.Drawing.Point(557, 253);
+            this.btnNuevo.Location = new System.Drawing.Point(576, 306);
             this.btnNuevo.Name = "btnNuevo";
             this.btnNuevo.Size = new System.Drawing.Size(131, 51);
             this.btnNuevo.TabIndex = 17;
@@ -204,7 +194,7 @@
             this.pbxImagenPerfil.BackColor = System.Drawing.Color.Transparent;
             this.pbxImagenPerfil.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pbxImagenPerfil.ErrorImage")));
             this.pbxImagenPerfil.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbxImagenPerfil.InitialImage")));
-            this.pbxImagenPerfil.Location = new System.Drawing.Point(69, 36);
+            this.pbxImagenPerfil.Location = new System.Drawing.Point(14, 86);
             this.pbxImagenPerfil.Name = "pbxImagenPerfil";
             this.pbxImagenPerfil.Size = new System.Drawing.Size(100, 100);
             this.pbxImagenPerfil.TabIndex = 1;
@@ -214,10 +204,10 @@
             // 
             this.btnGuardar.BackgroundImage = global::SistemaGestionInventario.Properties.Resources.color4;
             this.btnGuardar.FlatAppearance.BorderSize = 0;
-            this.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnGuardar.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGuardar.Image = global::SistemaGestionInventario.Properties.Resources.save_item___1411_;
-            this.btnGuardar.Location = new System.Drawing.Point(557, 197);
+            this.btnGuardar.Location = new System.Drawing.Point(13, 447);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(131, 49);
             this.btnGuardar.TabIndex = 45;
@@ -226,11 +216,124 @@
             this.btnGuardar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnGuardar.UseVisualStyleBackColor = true;
             // 
+            // btnSeleccionarImagen
+            // 
+            this.btnSeleccionarImagen.BackgroundImage = global::SistemaGestionInventario.Properties.Resources.color4;
+            this.btnSeleccionarImagen.FlatAppearance.BorderSize = 0;
+            this.btnSeleccionarImagen.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnSeleccionarImagen.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSeleccionarImagen.Location = new System.Drawing.Point(149, 117);
+            this.btnSeleccionarImagen.Name = "btnSeleccionarImagen";
+            this.btnSeleccionarImagen.Size = new System.Drawing.Size(172, 35);
+            this.btnSeleccionarImagen.TabIndex = 46;
+            this.btnSeleccionarImagen.Text = "Seleccionar imagen..";
+            this.btnSeleccionarImagen.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnSeleccionarImagen.UseVisualStyleBackColor = true;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.Transparent;
+            this.label7.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(396, 238);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(165, 21);
+            this.label7.TabIndex = 52;
+            this.label7.Text = "Confirmar contraseña:";
+            // 
+            // textBox6
+            // 
+            this.textBox6.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox6.Location = new System.Drawing.Point(561, 235);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(167, 28);
+            this.textBox6.TabIndex = 51;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.Transparent;
+            this.label8.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(396, 205);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(139, 21);
+            this.label8.TabIndex = 50;
+            this.label8.Text = "Contraseña nueva:";
+            // 
+            // textBox7
+            // 
+            this.textBox7.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox7.Location = new System.Drawing.Point(561, 201);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(167, 28);
+            this.textBox7.TabIndex = 49;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.Transparent;
+            this.label9.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(396, 170);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(139, 21);
+            this.label9.TabIndex = 48;
+            this.label9.Text = "Contraseña actual:";
+            // 
+            // textBox8
+            // 
+            this.textBox8.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox8.Location = new System.Drawing.Point(561, 167);
+            this.textBox8.Name = "textBox8";
+            this.textBox8.Size = new System.Drawing.Size(167, 28);
+            this.textBox8.TabIndex = 47;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(357, 86);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(41, 451);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 53;
+            this.pictureBox1.TabStop = false;
+            // 
+            // lblTitulo
+            // 
+            this.lblTitulo.AutoSize = true;
+            this.lblTitulo.BackColor = System.Drawing.Color.Transparent;
+            this.lblTitulo.Font = new System.Drawing.Font("Corbel", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitulo.Location = new System.Drawing.Point(282, 9);
+            this.lblTitulo.Name = "lblTitulo";
+            this.lblTitulo.Size = new System.Drawing.Size(204, 33);
+            this.lblTitulo.TabIndex = 54;
+            this.lblTitulo.Text = "Datos del usuario";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.BackColor = System.Drawing.Color.Transparent;
+            this.label10.Font = new System.Drawing.Font("Corbel", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(483, 102);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(180, 24);
+            this.label10.TabIndex = 55;
+            this.label10.Text = "Cambiar contraseña";
+            // 
             // frmPerfil
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(735, 538);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.lblTitulo);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.textBox6);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.textBox7);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.textBox8);
+            this.Controls.Add(this.btnSeleccionarImagen);
             this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.textBox5);
@@ -244,8 +347,6 @@
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.lblID);
-            this.Controls.Add(this.txtID);
             this.Controls.Add(this.btnNuevo);
             this.Controls.Add(this.pbxImagenPerfil);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -253,6 +354,7 @@
             this.Text = "Perfil";
             this.Load += new System.EventHandler(this.frmPerfil_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbxImagenPerfil)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -262,8 +364,6 @@
 
         private System.Windows.Forms.PictureBox pbxImagenPerfil;
         private System.Windows.Forms.Button btnNuevo;
-        private System.Windows.Forms.Label lblID;
-        private System.Windows.Forms.TextBox txtID;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label2;
@@ -277,5 +377,15 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.Button btnGuardar;
+        private System.Windows.Forms.Button btnSeleccionarImagen;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label lblTitulo;
+        private System.Windows.Forms.Label label10;
     }
 }
