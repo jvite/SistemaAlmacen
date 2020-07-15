@@ -17,6 +17,35 @@ namespace SistemaGestionInventario
         public frmUserAdmin()
         {
             InitializeComponent();
+
+            //los cuadros de texto no se pueden editar al iniciar
+            deshabilitarCajasDeTexto();
+
+            btnGuardar.Enabled = false;
+        }
+
+        private void habilitarCajasDeTexto()
+        {
+            txtID.Enabled = true;
+            txtNombre.Enabled = true;
+            txtApellidos.Enabled = true;
+            txtCorreo.Enabled = true;
+            txtTelefono.Enabled = true;
+            txtUsuario.Enabled = true;
+            txtContrasena.Enabled = true;
+            txtRol.Enabled = true;
+        }
+
+        private void deshabilitarCajasDeTexto()
+        {
+            txtID.Enabled = false;
+            txtNombre.Enabled = false;
+            txtApellidos.Enabled = false;
+            txtCorreo.Enabled = false;
+            txtTelefono.Enabled = false;
+            txtUsuario.Enabled = false;
+            txtContrasena.Enabled = false;
+            txtRol.Enabled = false;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -24,6 +53,35 @@ namespace SistemaGestionInventario
             if (MessageBox.Show("Está a pundo de reestablecer la contraseña actual, ¿Desea continuar?", "Reestablecer contraseña", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) == DialogResult.Yes)
             {
                 MessageBox.Show("La contraseña actuales: " + GenerarContrasena.GenerarPassword(8), "Contraseña reestablecida con éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+
+        private void btnNuevo_Click(object sender, EventArgs e)
+        {
+            habilitarCajasDeTexto();
+            btnActualizar.Enabled = false;
+            btnEditar.Enabled = false;
+        }
+
+        private void btnEditar_Click(object sender, EventArgs e)
+        {
+            habilitarCajasDeTexto();
+            btnNuevo.Enabled = false;
+            btnActualizar.Enabled = false;
+        }
+
+        private void btnGuardar_Click(object sender, EventArgs e)
+        {
+            deshabilitarCajasDeTexto();
+            btnEditar.Enabled = true;
+            btnActualizar.Enabled = true;
+        }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("¿Está seguro de eliminar este usuario? Esta acción no se puede deshacer.", "Eliminar usuario", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) == DialogResult.Yes)
+            {
+                MessageBox.Show("El usuario ha sido eliminado con éxito", "Eliminar usuario", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
     }
