@@ -52,7 +52,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.txtTelefono = new System.Windows.Forms.TextBox();
             this.btnEditar = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnReestablecerContrasena = new System.Windows.Forms.Button();
             this.btnBuscar = new System.Windows.Forms.Button();
             this.btnActualizar = new System.Windows.Forms.Button();
             this.btnGuardar = new System.Windows.Forms.Button();
@@ -300,21 +300,21 @@
             this.btnEditar.UseVisualStyleBackColor = true;
             this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
             // 
-            // button1
+            // btnReestablecerContrasena
             // 
-            this.button1.BackgroundImage = global::SistemaGestionInventario.Properties.Resources.color4;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Image = global::SistemaGestionInventario.Properties.Resources.lock_open_round___708_1;
-            this.button1.Location = new System.Drawing.Point(354, 204);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(205, 36);
-            this.button1.TabIndex = 45;
-            this.button1.Text = "Reestablecer contraseña";
-            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnReestablecerContrasena.BackgroundImage = global::SistemaGestionInventario.Properties.Resources.color4;
+            this.btnReestablecerContrasena.FlatAppearance.BorderSize = 0;
+            this.btnReestablecerContrasena.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnReestablecerContrasena.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReestablecerContrasena.Image = global::SistemaGestionInventario.Properties.Resources.lock_open_round___708_1;
+            this.btnReestablecerContrasena.Location = new System.Drawing.Point(354, 204);
+            this.btnReestablecerContrasena.Name = "btnReestablecerContrasena";
+            this.btnReestablecerContrasena.Size = new System.Drawing.Size(205, 36);
+            this.btnReestablecerContrasena.TabIndex = 45;
+            this.btnReestablecerContrasena.Text = "Reestablecer contraseña";
+            this.btnReestablecerContrasena.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnReestablecerContrasena.UseVisualStyleBackColor = true;
+            this.btnReestablecerContrasena.Click += new System.EventHandler(this.button1_Click);
             // 
             // btnBuscar
             // 
@@ -412,7 +412,7 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(735, 538);
             this.Controls.Add(this.btnEditar);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnReestablecerContrasena);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtTelefono);
             this.Controls.Add(this.lblCorreo);
@@ -483,7 +483,7 @@
         private System.Windows.Forms.TextBox txtCorreo;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtTelefono;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnReestablecerContrasena;
         private System.Windows.Forms.Button btnEditar;
     }
 }

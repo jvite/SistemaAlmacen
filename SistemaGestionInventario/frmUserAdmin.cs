@@ -61,20 +61,31 @@ namespace SistemaGestionInventario
             habilitarCajasDeTexto();
             btnActualizar.Enabled = false;
             btnEditar.Enabled = false;
+            btnNuevo.Enabled = false;
+            btnGuardar.Enabled = true;
+            btnReestablecerContrasena.Enabled = false;
+            btnBuscar.Enabled = false;
         }
 
         private void btnEditar_Click(object sender, EventArgs e)
         {
             habilitarCajasDeTexto();
+            btnEditar.Enabled = false;
             btnNuevo.Enabled = false;
             btnActualizar.Enabled = false;
+            btnGuardar.Enabled = true;
+            btnBuscar.Enabled = false;
         }
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
             deshabilitarCajasDeTexto();
+            btnGuardar.Enabled = false;
             btnEditar.Enabled = true;
             btnActualizar.Enabled = true;
+            btnNuevo.Enabled = true;
+            btnReestablecerContrasena.Enabled = true;
+            btnBuscar.Enabled = true;
         }
 
         private void btnEliminar_Click(object sender, EventArgs e)

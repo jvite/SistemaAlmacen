@@ -45,11 +45,11 @@
             this.lblArticulo = new System.Windows.Forms.Label();
             this.txtArticulo = new System.Windows.Forms.TextBox();
             this.lblDescripcion = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtDescripcion = new System.Windows.Forms.TextBox();
             this.lblProveedor = new System.Windows.Forms.Label();
             this.txtProveedor = new System.Windows.Forms.TextBox();
             this.lblEnExistencia = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtEnExistencia = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.cbxActivo = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -145,6 +145,7 @@
             this.btnActualizar.Text = "Actualizar";
             this.btnActualizar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnActualizar.UseVisualStyleBackColor = true;
+            this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
             // 
             // btnGuardar
             // 
@@ -161,6 +162,7 @@
             this.btnGuardar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnGuardar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // btnEliminar
             // 
@@ -176,6 +178,7 @@
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // btnNuevo
             // 
@@ -191,6 +194,7 @@
             this.btnNuevo.Text = "Nuevo";
             this.btnNuevo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnNuevo.UseVisualStyleBackColor = true;
+            this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
             // pictureBox3
             // 
@@ -216,6 +220,7 @@
             // 
             // txtID
             // 
+            this.txtID.Enabled = false;
             this.txtID.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtID.Location = new System.Drawing.Point(174, 52);
             this.txtID.Name = "txtID";
@@ -252,13 +257,13 @@
             this.lblDescripcion.TabIndex = 19;
             this.lblDescripcion.Text = "Descripción:";
             // 
-            // textBox1
+            // txtDescripcion
             // 
-            this.textBox1.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(174, 122);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(127, 28);
-            this.textBox1.TabIndex = 18;
+            this.txtDescripcion.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDescripcion.Location = new System.Drawing.Point(174, 122);
+            this.txtDescripcion.Name = "txtDescripcion";
+            this.txtDescripcion.Size = new System.Drawing.Size(127, 28);
+            this.txtDescripcion.TabIndex = 18;
             // 
             // lblProveedor
             // 
@@ -290,13 +295,13 @@
             this.lblEnExistencia.TabIndex = 23;
             this.lblEnExistencia.Text = "Unidades en existencia:";
             // 
-            // textBox2
+            // txtEnExistencia
             // 
-            this.textBox2.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(187, 188);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(114, 28);
-            this.textBox2.TabIndex = 22;
+            this.txtEnExistencia.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEnExistencia.Location = new System.Drawing.Point(187, 188);
+            this.txtEnExistencia.Name = "txtEnExistencia";
+            this.txtEnExistencia.Size = new System.Drawing.Size(114, 28);
+            this.txtEnExistencia.TabIndex = 22;
             // 
             // label3
             // 
@@ -351,6 +356,7 @@
             this.btnEditar.Text = "Editar";
             this.btnEditar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnEditar.UseVisualStyleBackColor = true;
+            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
             // 
             // frmAlmacen
             // 
@@ -364,11 +370,11 @@
             this.Controls.Add(this.cbxActivo);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.lblEnExistencia);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtEnExistencia);
             this.Controls.Add(this.lblProveedor);
             this.Controls.Add(this.txtProveedor);
             this.Controls.Add(this.lblDescripcion);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtDescripcion);
             this.Controls.Add(this.lblArticulo);
             this.Controls.Add(this.txtArticulo);
             this.Controls.Add(this.lblID);
@@ -388,7 +394,6 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmAlmacen";
             this.Text = "Almacen";
-            this.Load += new System.EventHandler(this.frmAlmacen_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvTabla)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
@@ -415,11 +420,11 @@
         private System.Windows.Forms.Label lblArticulo;
         private System.Windows.Forms.TextBox txtArticulo;
         private System.Windows.Forms.Label lblDescripcion;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtDescripcion;
         private System.Windows.Forms.Label lblProveedor;
         private System.Windows.Forms.TextBox txtProveedor;
         private System.Windows.Forms.Label lblEnExistencia;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtEnExistencia;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ComboBox cbxActivo;
         private System.Windows.Forms.Label label4;
