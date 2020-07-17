@@ -12,6 +12,17 @@ namespace SistemaGestionInventario
 {
     public partial class frmAdministrador : Form
     {
+        bool botonCuenta = false;
+        bool botonEscritorio = false;
+        bool botonAlmacen = false;
+        bool botonProveedores = false;
+        bool botonReportes = false;
+        bool botonPagos = false;
+        bool botonFacturas = false;
+        bool botonEstadisticas = false;
+        bool botonAdinUsuarios = false;
+        bool botonAcercaDe = false;
+
         public frmAdministrador()
         {
             InitializeComponent();
@@ -19,7 +30,7 @@ namespace SistemaGestionInventario
 
         private void frmAlmacen_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         private void abrirForm(object formHija) //Metodo para abrir un formulario dentro de un panel
@@ -28,7 +39,7 @@ namespace SistemaGestionInventario
             {
                 this.plContenedor.Controls.RemoveAt(0);//Se vacía el conetenedor
             }
-            Form fh = formHija as Form;//se declara el obejo
+            Form fh = formHija as Form;//se declara el objeto
             fh.TopLevel = false;//no es una ventana
             fh.Dock = DockStyle.Fill;//para que se acople
             this.plContenedor.Controls.Add(fh);//se añade el form al panel
@@ -59,6 +70,8 @@ namespace SistemaGestionInventario
             btnReportes.BackColor = Color.Transparent;
         }
 
+        
+
         private void btnCerrar_Click(object sender, EventArgs e)
         {
            if(MessageBox.Show("¿Desea salir de SIGAL SW?", "Salir", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) == DialogResult.Yes)
@@ -71,8 +84,10 @@ namespace SistemaGestionInventario
         /////////////////////////////////////EVENTOS BOTON CUENTA/////////////////////////////////////
         private void btnCuenta_MouseEnter(object sender, EventArgs e)//El mouse pasa sobre el botón
         {
-            btnCuenta.BackColor = Color.FromArgb(38, 50, 56);
-            btnCuenta.ForeColor = Color.White;
+            if (botonCuenta==false) {
+                btnCuenta.BackColor = Color.FromArgb(38, 50, 56);
+                btnCuenta.ForeColor = Color.White;
+            }
         }
 
         private void btnCuenta_MouseLeave(object sender, EventArgs e)//El mouse se sale del boton
@@ -218,6 +233,7 @@ namespace SistemaGestionInventario
             coloresDefault();
             btnCuenta.BackColor = Color.White;
             btnCuenta.ForeColor = Color.Gray;
+            //botonActivo = true;
             abrirForm(new frmPerfil());
         }
 

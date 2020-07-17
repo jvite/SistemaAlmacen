@@ -113,6 +113,36 @@ namespace SistemaGestionInventario.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap car_round___641_ {
+            get {
+                object obj = ResourceManager.GetObject("car_round [#641]", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap car_round___647_ {
+            get {
+                object obj = ResourceManager.GetObject("car_round [#647]", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap car_round___657_ {
+            get {
+                object obj = ResourceManager.GetObject("car_round [#657]", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap chart_fill___1291_ {
             get {
                 object obj = ResourceManager.GetObject("chart_fill [#1291]", resourceCulture);
@@ -456,6 +486,16 @@ namespace SistemaGestionInventario.Properties {
         internal static System.Drawing.Bitmap unnamed {
             get {
                 object obj = ResourceManager.GetObject("unnamed", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap unnamed1 {
+            get {
+                object obj = ResourceManager.GetObject("unnamed1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
