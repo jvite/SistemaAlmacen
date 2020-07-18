@@ -70,7 +70,19 @@ namespace SistemaGestionInventario
             btnReportes.BackColor = Color.Transparent;
         }
 
-        
+        private void resetearBotones()
+        {
+            botonCuenta = false;
+            botonEscritorio = false;
+            botonAlmacen = false;
+            botonProveedores = false;
+            botonReportes = false;
+            botonPagos = false;
+            botonFacturas = false;
+            botonEstadisticas = false;
+            botonAdinUsuarios = false;
+            botonAcercaDe = false;
+        }
 
         private void btnCerrar_Click(object sender, EventArgs e)
         {
@@ -92,8 +104,12 @@ namespace SistemaGestionInventario
 
         private void btnCuenta_MouseLeave(object sender, EventArgs e)//El mouse se sale del boton
         {
-            btnCuenta.BackColor = Color.Transparent;
-            btnCuenta.ForeColor = Color.Silver;
+            if (botonCuenta == false)
+            {
+                btnCuenta.BackColor = Color.Transparent;
+                btnCuenta.ForeColor = Color.Silver;
+            }
+            
         }
         /////////////////////////////////////EVENTOS BOTON ESCRITORIO/////////////////////////////////////
         private void btnEscritorio_MouseEnter(object sender, EventArgs e)
@@ -182,14 +198,20 @@ namespace SistemaGestionInventario
         /////////////////////////////////////EVENTOS BOTON ADMINISTRADOR/////////////////////////////////////
         private void btnAdministradorUsuarios_MouseEnter(object sender, EventArgs e)
         {
-            btnAdministradorUsuarios.BackColor = Color.FromArgb(38, 50, 56);
-            btnAdministradorUsuarios.ForeColor = Color.White;
+            if (botonAdinUsuarios == false)
+            {
+                btnAdministradorUsuarios.BackColor = Color.FromArgb(38, 50, 56);
+                btnAdministradorUsuarios.ForeColor = Color.White;
+            }
         }
 
         private void btnAdministradorUsuarios_MouseLeave(object sender, EventArgs e)
         {
-            btnAdministradorUsuarios.ForeColor = Color.Silver;
-            btnAdministradorUsuarios.BackColor = Color.Transparent;
+            if (botonAdinUsuarios == false)
+            {
+                btnAdministradorUsuarios.ForeColor = Color.Silver;
+                btnAdministradorUsuarios.BackColor = Color.Transparent;
+            }
         }
         /////////////////////////////////////EVENTOS BOTON ACERCA DE/////////////////////////////////////
         private void btnAcercaDe_MouseEnter(object sender, EventArgs e)
@@ -223,17 +245,20 @@ namespace SistemaGestionInventario
         private void btnAdministradorUsuarios_Click(object sender, EventArgs e)
         {
             coloresDefault();
+            resetearBotones();
             btnAdministradorUsuarios.BackColor = Color.White;
             btnAdministradorUsuarios.ForeColor = Color.Gray;
+            botonAdinUsuarios = true;
             abrirForm(new frmUserAdmin());
         }
 
         private void btnCuenta_Click(object sender, EventArgs e)
         {
             coloresDefault();
+            resetearBotones();
             btnCuenta.BackColor = Color.White;
             btnCuenta.ForeColor = Color.Gray;
-            //botonActivo = true;
+            botonCuenta = true;
             abrirForm(new frmPerfil());
         }
 

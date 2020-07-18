@@ -150,7 +150,7 @@
             this.plMenuLateral.Controls.Add(this.pbxImagenPerfil);
             this.plMenuLateral.Location = new System.Drawing.Point(0, 0);
             this.plMenuLateral.Name = "plMenuLateral";
-            this.plMenuLateral.Size = new System.Drawing.Size(192, 645);
+            this.plMenuLateral.Size = new System.Drawing.Size(191, 645);
             this.plMenuLateral.TabIndex = 0;
             // 
             // btnAcercaDe
