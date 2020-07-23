@@ -114,26 +114,37 @@ namespace SistemaGestionInventario
         /////////////////////////////////////EVENTOS BOTON ESCRITORIO/////////////////////////////////////
         private void btnEscritorio_MouseEnter(object sender, EventArgs e)
         {
-            btnEscritorio.BackColor = Color.FromArgb(38, 50, 56);
-            btnEscritorio.ForeColor = Color.White;
+            if (botonEscritorio == false) { 
+                btnEscritorio.BackColor = Color.FromArgb(38, 50, 56);
+                btnEscritorio.ForeColor = Color.White;
+            }
         }
 
         private void btnEscritorio_MouseLeave(object sender, EventArgs e)
         {
-            btnEscritorio.BackColor = Color.Transparent;
-            btnEscritorio.ForeColor = Color.Silver;
+            if (botonEscritorio == false)
+            {
+                btnEscritorio.BackColor = Color.Transparent;
+                btnEscritorio.ForeColor = Color.Silver;
+            }
         }
         /////////////////////////////////////EVENTOS BOTON ALMACEN/////////////////////////////////////
         private void btnAlmacen_MouseEnter(object sender, EventArgs e)
         {
-            btnAlmacen.BackColor = Color.FromArgb(38, 50, 56);
-            btnAlmacen.ForeColor = Color.White;
+            if (botonAlmacen == false)
+            {
+                btnAlmacen.BackColor = Color.FromArgb(38, 50, 56);
+                btnAlmacen.ForeColor = Color.White;
+            }
         }
 
         private void btnAlmacen_MouseLeave(object sender, EventArgs e)
         {
-            btnAlmacen.ForeColor = Color.Silver;
-            btnAlmacen.BackColor = Color.Transparent;
+            if (botonAlmacen == false)
+            {
+                btnAlmacen.ForeColor = Color.Silver;
+                btnAlmacen.BackColor = Color.Transparent;
+            }
         }
         /////////////////////////////////////EVENTOS BOTON PROVEEDORES/////////////////////////////////////
         private void btnProveedores_MouseEnter(object sender, EventArgs e)
