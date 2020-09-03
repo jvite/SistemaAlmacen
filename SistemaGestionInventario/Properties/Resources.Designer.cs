@@ -273,6 +273,16 @@ namespace SistemaGestionInventario.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap file___1677_ {
+            get {
+                object obj = ResourceManager.GetObject("file [#1677]", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap file_double___1695_ {
             get {
                 object obj = ResourceManager.GetObject("file_double [#1695]", resourceCulture);
@@ -313,6 +323,16 @@ namespace SistemaGestionInventario.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap linea_vertical {
+            get {
+                object obj = ResourceManager.GetObject("linea-vertical", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap lock_circle_close___701_ {
             get {
                 object obj = ResourceManager.GetObject("lock_circle_close [#701]", resourceCulture);
@@ -346,6 +366,16 @@ namespace SistemaGestionInventario.Properties {
         internal static System.Drawing.Bitmap money___1183_ {
             get {
                 object obj = ResourceManager.GetObject("money [#1183]", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap money_round___1184_ {
+            get {
+                object obj = ResourceManager.GetObject("money_round [#1184]", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -396,6 +426,16 @@ namespace SistemaGestionInventario.Properties {
         internal static System.Drawing.Bitmap profile_image_plus_round___1327_ {
             get {
                 object obj = ResourceManager.GetObject("profile_image_plus_round [#1327]", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap profile_round___1345_ {
+            get {
+                object obj = ResourceManager.GetObject("profile_round [#1345]", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

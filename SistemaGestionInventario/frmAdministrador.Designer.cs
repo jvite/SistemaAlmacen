@@ -53,6 +53,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblNombre = new System.Windows.Forms.Label();
             this.pbxImagenPerfil = new System.Windows.Forms.PictureBox();
+            this.btnClientes = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pbxSIGALSW)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.plMenuLateral.SuspendLayout();
@@ -131,6 +132,7 @@
             // plMenuLateral
             // 
             this.plMenuLateral.BackgroundImage = global::SistemaGestionInventario.Properties.Resources.color1;
+            this.plMenuLateral.Controls.Add(this.btnClientes);
             this.plMenuLateral.Controls.Add(this.btnAcercaDe);
             this.plMenuLateral.Controls.Add(this.pictureBox4);
             this.plMenuLateral.Controls.Add(this.btnAdministradorUsuarios);
@@ -163,7 +165,7 @@
             this.btnAcercaDe.ForeColor = System.Drawing.Color.Silver;
             this.btnAcercaDe.Image = global::SistemaGestionInventario.Properties.Resources.information___1446_;
             this.btnAcercaDe.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAcercaDe.Location = new System.Drawing.Point(0, 540);
+            this.btnAcercaDe.Location = new System.Drawing.Point(0, 577);
             this.btnAcercaDe.Name = "btnAcercaDe";
             this.btnAcercaDe.Size = new System.Drawing.Size(192, 29);
             this.btnAcercaDe.TabIndex = 14;
@@ -177,7 +179,7 @@
             // 
             this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox4.Image = global::SistemaGestionInventario.Properties.Resources.linea;
-            this.pictureBox4.Location = new System.Drawing.Point(0, 489);
+            this.pictureBox4.Location = new System.Drawing.Point(0, 526);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(192, 25);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -194,7 +196,7 @@
             this.btnAdministradorUsuarios.ForeColor = System.Drawing.Color.Silver;
             this.btnAdministradorUsuarios.Image = global::SistemaGestionInventario.Properties.Resources.profile_image_plus_round___1327_;
             this.btnAdministradorUsuarios.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAdministradorUsuarios.Location = new System.Drawing.Point(0, 512);
+            this.btnAdministradorUsuarios.Location = new System.Drawing.Point(0, 549);
             this.btnAdministradorUsuarios.Name = "btnAdministradorUsuarios";
             this.btnAdministradorUsuarios.Size = new System.Drawing.Size(192, 29);
             this.btnAdministradorUsuarios.TabIndex = 12;
@@ -215,7 +217,7 @@
             this.btnEstadisticas.ForeColor = System.Drawing.Color.Silver;
             this.btnEstadisticas.Image = global::SistemaGestionInventario.Properties.Resources.stats___1366_;
             this.btnEstadisticas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEstadisticas.Location = new System.Drawing.Point(0, 457);
+            this.btnEstadisticas.Location = new System.Drawing.Point(0, 494);
             this.btnEstadisticas.Name = "btnEstadisticas";
             this.btnEstadisticas.Size = new System.Drawing.Size(192, 29);
             this.btnEstadisticas.TabIndex = 11;
@@ -235,7 +237,7 @@
             this.btnFacturas.ForeColor = System.Drawing.Color.Silver;
             this.btnFacturas.Image = global::SistemaGestionInventario.Properties.Resources.file_double___1695_;
             this.btnFacturas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnFacturas.Location = new System.Drawing.Point(0, 428);
+            this.btnFacturas.Location = new System.Drawing.Point(0, 465);
             this.btnFacturas.Name = "btnFacturas";
             this.btnFacturas.Size = new System.Drawing.Size(192, 29);
             this.btnFacturas.TabIndex = 10;
@@ -255,7 +257,7 @@
             this.btnReportes.ForeColor = System.Drawing.Color.Silver;
             this.btnReportes.Image = global::SistemaGestionInventario.Properties.Resources.chart_fill___1291_;
             this.btnReportes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnReportes.Location = new System.Drawing.Point(0, 368);
+            this.btnReportes.Location = new System.Drawing.Point(0, 405);
             this.btnReportes.Name = "btnReportes";
             this.btnReportes.Size = new System.Drawing.Size(192, 29);
             this.btnReportes.TabIndex = 9;
@@ -275,7 +277,7 @@
             this.btnPagos.ForeColor = System.Drawing.Color.Silver;
             this.btnPagos.Image = global::SistemaGestionInventario.Properties.Resources.money___1183_;
             this.btnPagos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPagos.Location = new System.Drawing.Point(0, 396);
+            this.btnPagos.Location = new System.Drawing.Point(0, 433);
             this.btnPagos.Name = "btnPagos";
             this.btnPagos.Size = new System.Drawing.Size(192, 32);
             this.btnPagos.TabIndex = 10;
@@ -435,6 +437,24 @@
             this.pbxImagenPerfil.TabIndex = 0;
             this.pbxImagenPerfil.TabStop = false;
             // 
+            // btnClientes
+            // 
+            this.btnClientes.BackColor = System.Drawing.Color.Transparent;
+            this.btnClientes.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnClientes.FlatAppearance.BorderSize = 0;
+            this.btnClientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClientes.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClientes.ForeColor = System.Drawing.Color.Silver;
+            this.btnClientes.Image = global::SistemaGestionInventario.Properties.Resources.profile_round___1345_;
+            this.btnClientes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnClientes.Location = new System.Drawing.Point(-1, 372);
+            this.btnClientes.Name = "btnClientes";
+            this.btnClientes.Size = new System.Drawing.Size(192, 29);
+            this.btnClientes.TabIndex = 15;
+            this.btnClientes.Text = "Clientes";
+            this.btnClientes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnClientes.UseVisualStyleBackColor = false;
+            // 
             // frmAdministrador
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -493,6 +513,7 @@
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Button btnAdministradorUsuarios;
         private System.Windows.Forms.Button btnAcercaDe;
+        private System.Windows.Forms.Button btnClientes;
     }
 }
 
